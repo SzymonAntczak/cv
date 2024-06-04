@@ -1,0 +1,21 @@
+#about-me {
+  header p {
+    margin-block: 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-accent);
+
+    strong {
+      font-weight: 400;
+    }
+
+    span {
+      color: var(--color-text);
+    }
+  }
+
+  > p {
+    margin: 0;
+    text-align: justify;
+  }
+}

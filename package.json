@@ -1,0 +1,15 @@
+{
+  "name": "cv",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vite": "^5.2.0",
+    "vite-plugin-ejs": "^1.7.0"
+  }
+}
