@@ -84,3 +84,8 @@ const sections = Array.from(
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+const notificationButton = document.querySelector("#notification button");
+notificationButton.addEventListener("click", () => {
+  document.querySelector("#notification").remove();
+});

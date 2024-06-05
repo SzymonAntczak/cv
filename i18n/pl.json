@@ -4,7 +4,7 @@
       "role": "starszy programista frontend",
       "company": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
       "description": "Naszym zadaniem (jako zespół frontendowy) było zaprojektowanie oraz wydanie wersji MVP dwóch projektów przeznaczonych na cele uczelni. Pracowaliśmy w SCRUM'ie, a sam zespół złożony był z wielu osób - backendowców, testerów, menadżerów itd.",
-      "achievements": "Termin realizacji projektów był bardzo krótki, ale udało nam się zaprojektować na tyle elastyczną i skalowalną architekturę, że udało nam się zrealizować postawione przed nami zadanie.",
+      "achievements": "Termin realizacji projektów był bardzo krótki, ale byliśmy w stanie zaprojektować na tyle elastyczną i skalowalną architekturę, że udało nam się zrealizować postawione przed nami zadanie.",
       "techStack": ["Next.js", "Typescript", "TailwindCSS"],
       "startTime": "03.2023",
       "endTime": "12.2023"
@@ -30,7 +30,7 @@
     {
       "role": "programista frontend",
       "company": "MediaAmbassador",
-      "description": "Praca, która polegała na realizowaniu wielu projektów z branży e-commerce. Większość z nich była realizowana z użyciem Angulara, jednak te starsze z nich, które należało utrzymywać, bazowała na narzędziach takich jak JQuery czy AngularJS. Pracowaliśmy nad kilkoma projektami na raz, w małych zespołach, w których panowała duża rotacja projektów.",
+      "description": "Praca, która polegała na realizowaniu wielu projektów z branży e-commerce. Większość z nich była tworzona z użyciem Angulara, jednak te starsze, które należało utrzymywać, bazowały na narzędziach takich jak JQuery czy AngularJS. Pracowaliśmy nad kilkoma projektami na raz, w małych zespołach, w których panowała duża rotacja projektów.",
       "achievements": "Najważniejszym osiągnięciem było wypracowanie wraz zespołem modelu pracy, który umożliwił nam seryjną realizację projektów w krótkim czasie, przy jednoczesnym zachowaniu wysokiej jakości kodu. Byliśmy zdolni do oddawania jednego sklepu internetowego co ok. 1-2 miesiące.",
       "techStack": ["Angular 2+", "Sass"],
       "startTime": "03.2018",
@@ -40,7 +40,7 @@
       "role": "młodszy programista frontend",
       "company": "Appevo",
       "description": "Była to swoista kontynuacja pracy w Lithium. Miałem okazję ugruntować swoją wiedzę i umiejętności, których nauczyłem się w poprzednim miejscu pracy.",
-      "achievements": "Udało mi się stworzyć swojego rodzaju 'projekt bazowy', dzięki któremu łatwiej było mi zaczynać każdy kolejny projekt i który bardzo ułatwiał mi początkowe prace nad projektem.",
+      "achievements": "Udało mi się stworzyć swego rodzaju 'setup bazowy', dzięki któremu łatwiej było mi zaczynać każdy kolejny projekt i który bardzo ułatwiał mi początkowe prace.",
       "techStack": ["HTML", "CSS/Sass", "JQuery", "WordPress"],
       "startTime": "01.2017",
       "endTime": "08.2017"
@@ -69,6 +69,56 @@
       "fieldOfStudy": "Technik informatyk",
       "startTime": "2011",
       "endTime": "2015"
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Bytom",
+      "img": "/bytom.png",
+      "description": "Opisik",
+      "href": "https://bytom.com.pl/"
+    },
+    {
+      "name": "Qubus Hotel",
+      "img": "/qubus.png",
+      "description": "Opisik",
+      "href": "https://www.qubushotel.com/pl/"
+    },
+    {
+      "name": "BigStar",
+      "img": "/bigstar.png",
+      "description": "Opisik",
+      "href": "https://bigstar.pl/"
+    },
+    {
+      "name": "Callpage",
+      "img": "/callpage.png",
+      "description": "Opisik",
+      "href": "https://www.callpage.io/pl/"
+    },
+    {
+      "name": "Sevi Kebab",
+      "img": "/sevikebab.png",
+      "description": "Opisik",
+      "href": "https://sevikebab.pl/"
+    },
+    {
+      "name": "Grzebieluch stomatologia",
+      "img": "/grzebieluch.png",
+      "description": "Opisik",
+      "href": "http://www.grzebieluch.pl/"
+    },
+    {
+      "name": "Willa pod błękitnym koniem",
+      "img": "/willa.png",
+      "description": "Opisik",
+      "href": "http://podblekitnymkoniem.pl/"
+    },
+    {
+      "name": "Notariuszka Wrocław",
+      "img": "/notariuszka.png",
+      "description": "Opisik",
+      "href": "https://notariuszkawroclaw.pl/"
     }
   ]
 }

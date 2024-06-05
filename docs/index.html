@@ -17,33 +17,46 @@
 
 
     <title>CV Szymon Antczak</title>
-    <script type="module" crossorigin src="./assets/index-XMrtqnIA.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DO7dzDE1.css">
+    <script type="module" crossorigin src="./assets/index-BgfRnC5p.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CEp6omQ9.css">
   </head>
   <body>
+    <aside id="notification">
+      <p>
+        Strona wciąż znajduje się w fazie budowy. Za niepoprawne działanie
+        serdecznie przepraszam.
+      </p>
+      <button aria-label="Zamknij powiadomienie">X</button>
+    </aside>
+
     <aside id="navbar">
-      <a href="#about-me">SA</a>
+      <a href="#about-me" aria-label="O mnie">SA</a>
 
       <nav>
         <ul>
           <li>
-            <a href="#about-me">
+            <a href="#about-me" aria-label="O mnie">
               <span class="material-symbols-outlined">person</span>
             </a>
           </li>
           <li>
-            <a href="#specialization">
+            <a href="#specialization" aria-label="Specjalizacje">
               <span class="material-symbols-outlined">star_rate</span>
             </a>
           </li>
           <li>
-            <a href="#experience">
+            <a href="#experience" aria-label="Doświadczenie">
               <span class="material-symbols-outlined">business_center</span>
             </a>
           </li>
           <li>
-            <a href="#education">
+            <a href="#education" aria-label="Wykształcenie">
               <span class="material-symbols-outlined">school</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio" aria-label="Portfolio">
+              <span class="material-symbols-outlined">photo</span>
             </a>
           </li>
         </ul>
@@ -57,7 +70,7 @@
           <div>
             <div>
               <h1>Szymon Antczak</h1>
-              <a href="tel:+48691071238" aria-label="Phone">
+              <a href="tel:+48691071238" aria-label="Telefon">
                 <i class="fa-solid fa-phone"></i>
               </a>
               <a href="mailto:szymon0antczak@gmail.com" aria-label="E-mail">
@@ -226,14 +239,12 @@
                 <strong>osiągnięcia</strong>
               </dd>
               <dt>
-                <p>Termin realizacji projektów był bardzo krótki, ale udało nam się zaprojektować na tyle elastyczną i skalowalną architekturę, że udało nam się zrealizować postawione przed nami zadanie.</p>
+                <p>Termin realizacji projektów był bardzo krótki, ale byliśmy w stanie zaprojektować na tyle elastyczną i skalowalną architekturę, że udało nam się zrealizować postawione przed nami zadanie.</p>
               </dt>
               <dd>
                 <strong>technologie</strong>
               </dd>
-              <dt>
-                Next.js, Typescript, TailwindCSS
-              </dt>
+              <dt>Next.js, Typescript, TailwindCSS</dt>
             </dl>
           </li>
           
@@ -259,9 +270,7 @@
               <dd>
                 <strong>technologie</strong>
               </dd>
-              <dt>
-                Next.js, Typescript, strapi, Sass
-              </dt>
+              <dt>Next.js, Typescript, strapi, Sass</dt>
             </dl>
           </li>
           
@@ -287,9 +296,7 @@
               <dd>
                 <strong>technologie</strong>
               </dd>
-              <dt>
-                Angular 9+, Sass
-              </dt>
+              <dt>Angular 9+, Sass</dt>
             </dl>
           </li>
           
@@ -304,7 +311,7 @@
                 <strong>cele i obowiązki</strong>
               </dd>
               <dt>
-                <p>Praca, która polegała na realizowaniu wielu projektów z branży e-commerce. Większość z nich była realizowana z użyciem Angulara, jednak te starsze z nich, które należało utrzymywać, bazowała na narzędziach takich jak JQuery czy AngularJS. Pracowaliśmy nad kilkoma projektami na raz, w małych zespołach, w których panowała duża rotacja projektów.</p>
+                <p>Praca, która polegała na realizowaniu wielu projektów z branży e-commerce. Większość z nich była tworzona z użyciem Angulara, jednak te starsze, które należało utrzymywać, bazowały na narzędziach takich jak JQuery czy AngularJS. Pracowaliśmy nad kilkoma projektami na raz, w małych zespołach, w których panowała duża rotacja projektów.</p>
               </dt>
               <dd>
                 <strong>osiągnięcia</strong>
@@ -315,9 +322,7 @@
               <dd>
                 <strong>technologie</strong>
               </dd>
-              <dt>
-                Angular 2+, Sass
-              </dt>
+              <dt>Angular 2+, Sass</dt>
             </dl>
           </li>
           
@@ -338,14 +343,12 @@
                 <strong>osiągnięcia</strong>
               </dd>
               <dt>
-                <p>Udało mi się stworzyć swojego rodzaju &#39;projekt bazowy&#39;, dzięki któremu łatwiej było mi zaczynać każdy kolejny projekt i który bardzo ułatwiał mi początkowe prace nad projektem.</p>
+                <p>Udało mi się stworzyć swego rodzaju &#39;setup bazowy&#39;, dzięki któremu łatwiej było mi zaczynać każdy kolejny projekt i który bardzo ułatwiał mi początkowe prace.</p>
               </dt>
               <dd>
                 <strong>technologie</strong>
               </dd>
-              <dt>
-                HTML, CSS/Sass, JQuery, WordPress
-              </dt>
+              <dt>HTML, CSS/Sass, JQuery, WordPress</dt>
             </dl>
           </li>
           
@@ -371,9 +374,7 @@
               <dd>
                 <strong>technologie</strong>
               </dd>
-              <dt>
-                HTML, CSS/Sass, JQuery, WordPress
-              </dt>
+              <dt>HTML, CSS/Sass, JQuery, WordPress</dt>
             </dl>
           </li>
           
@@ -413,14 +414,98 @@
         <h2 class="section-title">portfolio</h2>
 
         <p>
-          <a href="https://github.com/FitexPol/Fitex">
-            Własny projekt aplikacji do tworzenia list zakupów
-          </a>
-          Stack technologiczny: <a href="https://bun.sh/">Bun</a>,
-          <a href="https://www.mongodb.com/">MongoDB</a>,
-          <a href="https://elysiajs.com/">ElysiaJS</a>,
-          <a href="https://htmx.org/">HTMX</a>
+          Poniższa galeria przedstawia tylko niektóre projekty realizowane przez
+          firmy, w których miałem przyjemność pracować. Postanowiłem umieścić
+          tylko takie, w których mój udział był duży lub bardzo duży.<br />
+          <small>
+            * Aby poznać więcej szczegółów na temat mojej roli w danym
+            projekcie, najedź kursorem na odpowiedni kafelek.
+          </small>
         </p>
+
+        <ul>
+          
+          <li>
+            <figure>
+              <img src="./bytom.png" alt="Bytom" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="https://bytom.com.pl/" target="_blank">Bytom</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <img src="./qubus.png" alt="Qubus Hotel" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="https://www.qubushotel.com/pl/" target="_blank">Qubus Hotel</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <img src="./bigstar.png" alt="BigStar" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="https://bigstar.pl/" target="_blank">BigStar</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <img src="./callpage.png" alt="Callpage" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="https://www.callpage.io/pl/" target="_blank">Callpage</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <img src="./sevikebab.png" alt="Sevi Kebab" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="https://sevikebab.pl/" target="_blank">Sevi Kebab</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <img src="./grzebieluch.png" alt="Grzebieluch stomatologia" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="http://www.grzebieluch.pl/" target="_blank">Grzebieluch stomatologia</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <img src="./willa.png" alt="Willa pod błękitnym koniem" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="http://podblekitnymkoniem.pl/" target="_blank">Willa pod błękitnym koniem</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+          <li>
+            <figure>
+              <img src="./notariuszka.png" alt="Notariuszka Wrocław" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="https://notariuszkawroclaw.pl/" target="_blank">Notariuszka Wrocław</a>
+              </figcaption>
+            </figure>
+          </li>
+          
+        </ul>
       </section>
 
       <footer>
@@ -428,7 +513,13 @@
       </footer>
     </main>
 
-    <a id="scroll-up-btn" class="hidden" href="#about-me" aria-hidden="true">
+    <a
+      id="scroll-up-btn"
+      class="hidden"
+      href="#about-me"
+      aria-hidden="true"
+      aria-label="O mnie"
+    >
       <span class="material-symbols-outlined">arrow_upward</span>
     </a>
   </body>

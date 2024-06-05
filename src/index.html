@@ -21,29 +21,42 @@
     <title>CV Szymon Antczak</title>
   </head>
   <body>
+    <aside id="notification">
+      <p>
+        Strona wciąż znajduje się w fazie budowy. Za niepoprawne działanie
+        serdecznie przepraszam.
+      </p>
+      <button aria-label="Zamknij powiadomienie">X</button>
+    </aside>
+
     <aside id="navbar">
-      <a href="#about-me">SA</a>
+      <a href="#about-me" aria-label="O mnie">SA</a>
 
       <nav>
         <ul>
           <li>
-            <a href="#about-me">
+            <a href="#about-me" aria-label="O mnie">
               <span class="material-symbols-outlined">person</span>
             </a>
           </li>
           <li>
-            <a href="#specialization">
+            <a href="#specialization" aria-label="Specjalizacje">
               <span class="material-symbols-outlined">star_rate</span>
             </a>
           </li>
           <li>
-            <a href="#experience">
+            <a href="#experience" aria-label="Doświadczenie">
               <span class="material-symbols-outlined">business_center</span>
             </a>
           </li>
           <li>
-            <a href="#education">
+            <a href="#education" aria-label="Wykształcenie">
               <span class="material-symbols-outlined">school</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio" aria-label="Portfolio">
+              <span class="material-symbols-outlined">photo</span>
             </a>
           </li>
         </ul>
@@ -57,7 +70,7 @@
           <div>
             <div>
               <h1>Szymon Antczak</h1>
-              <a href="tel:+48691071238" aria-label="Phone">
+              <a href="tel:+48691071238" aria-label="Telefon">
                 <i class="fa-solid fa-phone"></i>
               </a>
               <a href="mailto:szymon0antczak@gmail.com" aria-label="E-mail">
@@ -231,9 +244,7 @@
               <dd>
                 <strong>technologie</strong>
               </dd>
-              <dt>
-                <%= item.techStack.join(', ') %>
-              </dt>
+              <dt><%= item.techStack.join(', ') %></dt>
             </dl>
           </li>
           <% }); %>
@@ -264,14 +275,28 @@
         <h2 class="section-title">portfolio</h2>
 
         <p>
-          <a href="https://github.com/FitexPol/Fitex">
-            Własny projekt aplikacji do tworzenia list zakupów
-          </a>
-          Stack technologiczny: <a href="https://bun.sh/">Bun</a>,
-          <a href="https://www.mongodb.com/">MongoDB</a>,
-          <a href="https://elysiajs.com/">ElysiaJS</a>,
-          <a href="https://htmx.org/">HTMX</a>
+          Poniższa galeria przedstawia tylko niektóre projekty realizowane przez
+          firmy, w których miałem przyjemność pracować. Postanowiłem umieścić
+          tylko takie, w których mój udział był duży lub bardzo duży.<br />
+          <small>
+            * Aby poznać więcej szczegółów na temat mojej roli w danym
+            projekcie, najedź kursorem na odpowiedni kafelek.
+          </small>
         </p>
+
+        <ul>
+          <% portfolio.forEach(function(item) { %>
+          <li>
+            <figure>
+              <img src="<%= item.img %>" alt="<%= item.name %>" />
+              <figcaption>
+                <p>Opisik</p>
+                <a href="<%= item.href %>" target="_blank"><%= item.name %></a>
+              </figcaption>
+            </figure>
+          </li>
+          <% }); %>
+        </ul>
       </section>
 
       <footer>
@@ -279,7 +304,13 @@
       </footer>
     </main>
 
-    <a id="scroll-up-btn" class="hidden" href="#about-me" aria-hidden="true">
+    <a
+      id="scroll-up-btn"
+      class="hidden"
+      href="#about-me"
+      aria-hidden="true"
+      aria-label="O mnie"
+    >
       <span class="material-symbols-outlined">arrow_upward</span>
     </a>
   </body>

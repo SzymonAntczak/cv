@@ -7,6 +7,7 @@ layer(icons);
 @import "./styles/about-me.css";
 @import "./styles/experience.css";
 @import "./styles/specialization.css";
+@import "./styles/portfolio.css";
 
 @layer globals {
   :root {
@@ -54,6 +55,10 @@ layer(icons);
     line-height: 1.7;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   .section-title {
     font-size: 3rem;
     margin-block: 0 1rem;
@@ -82,5 +87,41 @@ layer(icons);
 
   &.hidden {
     transform: translateY(calc(100% + var(--bottom-offset)));
+  }
+}
+
+#notification {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: 10;
+  background-color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  box-shadow: 0 0 0.5rem var(--color-background);
+
+  p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+
+  button {
+    font-size: 0.7rem;
+    background: none;
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    padding-block: 0.25rem;
+    padding-inline: 0.5rem;
+
+    &:hover {
+      background-color: var(--color-text);
+      color: var(--color-accent);
+      transition: 0.3s all ease;
+    }
   }
 }
