@@ -37,6 +37,8 @@ BREAKPOINTS
   }
 
   body {
+    display: grid;
+    grid-template-columns: minmax(min-content, max-content) 1fr;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -74,6 +76,10 @@ BREAKPOINTS
   .section-title {
     font-size: 3rem;
     margin-block: 0 1rem;
+
+    @media (max-width: 767px) {
+      font-size: 2rem;
+    }
   }
 
   .period {

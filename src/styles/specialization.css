@@ -16,16 +16,25 @@
 
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
+      row-gap: 2rem;
     }
 
     li {
       img {
         block-size: 3.5rem;
+
+        @media (max-width: 767px) {
+          block-size: 3rem;
+        }
       }
 
       #accessibility-icon {
         font-size: 3.5rem;
         color: var(--color-primary-light);
+
+        @media (max-width: 767px) {
+          font-size: 3rem;
+        }
       }
 
       > h3,
