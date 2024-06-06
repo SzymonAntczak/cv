@@ -74,56 +74,56 @@
   "portfolio": [
     {
       "name": "Sevi Kebab",
-      "img": "/portfolio/sevikebab.png",
+      "img": "/images/portfolio/sevikebab.png",
       "description": "Opisik",
       "href": "https://sevikebab.pl/",
       "company": "Lithium"
     },
     {
       "name": "Bytom",
-      "img": "/portfolio/bytom.png",
+      "img": "/images/portfolio/bytom.png",
       "description": "Opisik",
       "href": "https://bytom.com.pl/",
       "company": "MediaAmbassador"
     },
     {
       "name": "Grzebieluch stomatologia",
-      "img": "/portfolio/grzebieluch.png",
+      "img": "/images/portfolio/grzebieluch.png",
       "description": "Opisik",
       "href": "http://www.grzebieluch.pl/",
       "company": "Lithium"
     },
     {
       "name": "Qubus Hotel",
-      "img": "/portfolio/qubus.png",
+      "img": "/images/portfolio/qubus.png",
       "description": "Opisik",
       "href": "https://www.qubushotel.com/pl/",
       "company": "MediaAmbassador"
     },
     {
       "name": "BigStar",
-      "img": "/portfolio/bigstar.png",
+      "img": "/images/portfolio/bigstar.png",
       "description": "Opisik",
       "href": "https://bigstar.pl/",
       "company": "MediaAmbassador"
     },
     {
       "name": "Callpage",
-      "img": "/portfolio/callpage.png",
+      "img": "/images/portfolio/callpage.png",
       "description": "Opisik",
       "href": "https://www.callpage.pl/",
       "company": "1000i"
     },
     {
       "name": "Willa pod błękitnym koniem",
-      "img": "/portfolio/willa.png",
+      "img": "/images/portfolio/willa.png",
       "description": "Opisik",
       "href": "http://podblekitnymkoniem.pl/",
       "company": "Lithium"
     },
     {
       "name": "Notariuszka Wrocław",
-      "img": "/portfolio/notariuszka.png",
+      "img": "/images/portfolio/notariuszka.png",
       "description": "Opisik",
       "href": "https://notariuszkawroclaw.pl/",
       "company": "Lithium"

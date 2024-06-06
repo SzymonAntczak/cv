@@ -35,12 +35,14 @@
         }
       }
 
-      #accessibility-icon {
-        font-size: 3.5rem;
-        color: var(--color-primary-light);
+      > svg {
+        inline-size: 3.5rem;
+        block-size: 3.5rem;
+        fill: var(--color-primary-light);
 
         @media (max-width: 767px) {
-          font-size: 3rem;
+          inline-size: 3rem;
+          block-size: 3rem;
         }
       }
 
