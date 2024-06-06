@@ -24,7 +24,7 @@
 
     @media (max-width: 767px) {
       margin-inline-start: 0;
-      text-align: justify;;
+      text-align: justify;
     }
 
     &:not(:last-of-type) {

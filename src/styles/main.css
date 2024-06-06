@@ -42,7 +42,7 @@ main {
 
     @media (max-width: 979px) {
       box-shadow: none;
-      padding-inline: var(--padding-inline-section)
+      padding-inline: var(--padding-inline-section);
     }
 
     > div {

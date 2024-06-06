@@ -1,6 +1,5 @@
 #navbar {
   text-align: center;
-  
 
   @media (max-width: 979px) {
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
@@ -22,6 +21,7 @@
 
       @media (max-width: 767px) {
         font-size: 1.5rem;
+        padding-inline: 0.5rem;
       }
     }
 
