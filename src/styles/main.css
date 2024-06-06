@@ -94,6 +94,11 @@ main {
         h1 {
           margin-block: 0 2rem;
           font-size: 3rem;
+
+          @media (max-width: 480px) {
+            font-size: 2rem;
+            margin-block: 0 1rem;
+          }
         }
 
         a {
@@ -101,6 +106,10 @@ main {
 
           i {
             font-size: 1.25rem;
+
+            @media (max-width: 480px) {
+              font-size: 1rem;
+            }
           }
         }
       }
