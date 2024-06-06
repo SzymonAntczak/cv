@@ -21,14 +21,6 @@
     <title>CV Szymon Antczak</title>
   </head>
   <body>
-    <aside id="notification">
-      <p>
-        Strona wciąż znajduje się w fazie budowy. Za niepoprawne działanie
-        serdecznie przepraszam.
-      </p>
-      <button aria-label="Zamknij powiadomienie">X</button>
-    </aside>
-
     <aside id="navbar">
       <a href="#about-me" aria-label="O mnie">SA</a>
 
@@ -277,11 +269,9 @@
         <p>
           Poniższa galeria przedstawia tylko niektóre projekty realizowane przez
           firmy, w których miałem przyjemność pracować. Postanowiłem umieścić
-          tylko takie, w których mój udział był duży lub bardzo duży.<br />
-          <small>
-            * Aby poznać więcej szczegółów na temat mojej roli w danym
-            projekcie, najedź kursorem na odpowiedni kafelek.
-          </small>
+          tylko takie, w których mój udział był duży lub bardzo duży. Niestety
+          większość z nich to projekty sprzed paru lat, ponieważ te najnowsze
+          były do użytku wewnętrznego i nie ma możliwości ich pokazania.
         </p>
 
         <ul>
@@ -290,8 +280,8 @@
             <figure>
               <img src="<%= item.img %>" alt="<%= item.name %>" />
               <figcaption>
-                <p>Opisik</p>
                 <a href="<%= item.href %>" target="_blank"><%= item.name %></a>
+                <small>Realizacja w ramach pracy dla <%= item.company %></small>
               </figcaption>
             </figure>
           </li>

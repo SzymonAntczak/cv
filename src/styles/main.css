@@ -3,10 +3,22 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
 
+  @media (max-width: 979px) {
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    margin-inline-start: 62px;
+  }
+
   > * {
     &:not(header) {
       padding-block: 3rem;
       padding-inline: var(--padding-inline-section);
+
+      @media (max-width: 1200px) {
+        padding-block: 2rem;
+      }
     }
 
     &:not(:first-child),
@@ -16,7 +28,7 @@ main {
       &::after {
         content: "";
         position: absolute;
-        inset-inline-start: 3rem;
+        inset-inline-start: var(--padding-inline-section);
         inset-block-end: 0;
         inline-size: calc(100% - 2 * var(--padding-inline-section));
         block-size: 1px;
@@ -29,15 +41,28 @@ main {
     grid-row: 1 / 7;
     box-shadow: 0 0 10px black;
 
+    @media (max-width: 979px) {
+      box-shadow: none;
+      padding-inline: var(--padding-inline-section)
+    }
+
     > div {
       position: sticky;
       block-size: 100svh;
       top: 0;
 
+      @media (max-width: 979px) {
+        block-size: auto;
+      }
+
       img {
         inline-size: 100%;
         block-size: 100%;
         object-fit: cover;
+
+        @media (max-width: 979px) {
+          display: none;
+        }
       }
 
       > div {
@@ -55,6 +80,13 @@ main {
         display: flex;
         align-items: flex-end;
         justify-content: center;
+
+        @media (max-width: 979px) {
+          position: static;
+          display: block;
+          text-align: left;
+          padding-block: 2rem;
+        }
 
         h1 {
           margin-block: 0 2rem;

@@ -85,7 +85,27 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
-const notificationButton = document.querySelector("#notification button");
-notificationButton.addEventListener("click", () => {
-  document.querySelector("#notification").remove();
-});
+const ssIsNotificationHiddenKey = "cv.isNotificationHidden";
+const isNotificationHidden = sessionStorage.getItem(ssIsNotificationHiddenKey);
+
+if (!isNotificationHidden) {
+  const notificationElement = document.createElement("aside");
+
+  notificationElement.id = "notification";
+  notificationElement.innerHTML = `
+    <p>
+      Strona wciąż znajduje się w fazie budowy. Za niepoprawne działanie
+      serdecznie przepraszam.
+    </p>
+    <button aria-label="Zamknij powiadomienie">X</button>
+  `;
+
+  document.body.appendChild(notificationElement);
+
+  const closeButton = notificationElement.querySelector("button");
+
+  closeButton.addEventListener("click", () => {
+    sessionStorage.setItem(ssIsNotificationHiddenKey, true);
+    notificationElement.remove();
+  });
+}

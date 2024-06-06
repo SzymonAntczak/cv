@@ -10,31 +10,39 @@
     gap: 1rem;
 
     li {
-      grid-column: span 2;
+      grid-column: span 3;
       box-shadow: 0 0 0.25rem black;
       position: relative;
       overflow: hidden;
 
+      @media (min-width: 1200px) {
+        grid-column: span 2;
+
+        &:nth-of-type(2n) {
+          grid-column: span 4;
+          grid-row: span 2;
+        }
+  
+        &:nth-of-type(4n),
+        &:nth-of-type(5n) {
+          grid-column: span 3;
+          grid-row: span 2;
+        }
+  
+        &:nth-of-type(8n) {
+          grid-column: span 2;
+          grid-row: span 1;
+        }
+      }
+
+      @media (max-width: 767px) {
+        grid-column: span 6;
+      }
+
       &:hover figure figcaption {
         opacity: 1;
       }
-
-      &:nth-of-type(2n) {
-        grid-column: span 4;
-        grid-row: span 2;
-      }
-
-      &:nth-of-type(4n),
-      &:nth-of-type(5n) {
-        grid-column: span 3;
-        grid-row: span 2;
-      }
-
-      &:nth-of-type(8n) {
-        grid-column: span 2;
-        grid-row: span 1;
-      }
-
+      
       figure {
         margin: 0;
         inline-size: 100%;
@@ -52,21 +60,14 @@
           position: absolute;
           inset: 0;
           display: flex;
-          flex-direction: column;
           align-items: center;
-          gap: 1rem;
+          justify-content: center;
+          gap: 0.5rem;
           background: rgba(0, 0, 0, 0.8);
-          padding: 2rem;
+          padding-inline: 0.5rem;
+          padding-block: 1rem;
           opacity: 0;
           transition: 0.3s opacity ease;
-
-          p {
-            flex-grow: 1;
-            inline-size: 100%;
-            margin: 0;
-            font-size: 0.85rem;
-            font-weight: 500;
-          }
 
           a {
             color: var(--color-accent);
@@ -75,12 +76,22 @@
             border: 1px solid var(--color-accent);
             padding-block: 0.5rem;
             padding-inline: 1rem;
+            font-size: 0.85rem;
             transition: 0.3s all ease;
+            inline-size: max-content;
+            text-align: center;
 
             &:hover {
               background-color: var(--color-accent);
               color: var(--color-background);
             }
+          }
+
+          small {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0.5rem;
+            font-size: 0.75rem;
           }
         }
       }

@@ -9,6 +9,14 @@ layer(icons);
 @import "./styles/specialization.css";
 @import "./styles/portfolio.css";
 
+/*
+BREAKPOINTS
+--xs: 480px;
+--sm: 767px;
+--md: 979px;
+--xl: 1200px;
+*/
+
 @layer globals {
   :root {
     --color-primary: #087ca7;
@@ -18,6 +26,10 @@ layer(icons);
     --color-text: #f8f0fb;
     --color-gray: rgba(248, 240, 251, 0.15);
     --padding-inline-section: 3rem;
+
+    @media (max-width: 1200px) {
+      --padding-inline-section: 2rem;
+    }
   }
 
   * {

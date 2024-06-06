@@ -73,52 +73,60 @@
   ],
   "portfolio": [
     {
-      "name": "Bytom",
-      "img": "/bytom.png",
-      "description": "Opisik",
-      "href": "https://bytom.com.pl/"
-    },
-    {
-      "name": "Qubus Hotel",
-      "img": "/qubus.png",
-      "description": "Opisik",
-      "href": "https://www.qubushotel.com/pl/"
-    },
-    {
-      "name": "BigStar",
-      "img": "/bigstar.png",
-      "description": "Opisik",
-      "href": "https://bigstar.pl/"
-    },
-    {
-      "name": "Callpage",
-      "img": "/callpage.png",
-      "description": "Opisik",
-      "href": "https://www.callpage.io/pl/"
-    },
-    {
       "name": "Sevi Kebab",
       "img": "/sevikebab.png",
       "description": "Opisik",
-      "href": "https://sevikebab.pl/"
+      "href": "https://sevikebab.pl/",
+      "company": "Lithium"
+    },
+    {
+      "name": "Bytom",
+      "img": "/bytom.png",
+      "description": "Opisik",
+      "href": "https://bytom.com.pl/",
+      "company": "MediaAmbassador"
     },
     {
       "name": "Grzebieluch stomatologia",
       "img": "/grzebieluch.png",
       "description": "Opisik",
-      "href": "http://www.grzebieluch.pl/"
+      "href": "http://www.grzebieluch.pl/",
+      "company": "Lithium"
+    },
+    {
+      "name": "Qubus Hotel",
+      "img": "/qubus.png",
+      "description": "Opisik",
+      "href": "https://www.qubushotel.com/pl/",
+      "company": "MediaAmbassador"
+    },
+    {
+      "name": "BigStar",
+      "img": "/bigstar.png",
+      "description": "Opisik",
+      "href": "https://bigstar.pl/",
+      "company": "MediaAmbassador"
+    },
+    {
+      "name": "Callpage",
+      "img": "/callpage.png",
+      "description": "Opisik",
+      "href": "https://www.callpage.io/pl/",
+      "company": "1000i"
     },
     {
       "name": "Willa pod błękitnym koniem",
       "img": "/willa.png",
       "description": "Opisik",
-      "href": "http://podblekitnymkoniem.pl/"
+      "href": "http://podblekitnymkoniem.pl/",
+      "company": "Lithium"
     },
     {
       "name": "Notariuszka Wrocław",
       "img": "/notariuszka.png",
       "description": "Opisik",
-      "href": "https://notariuszkawroclaw.pl/"
+      "href": "https://notariuszkawroclaw.pl/",
+      "company": "Lithium"
     }
   ]
 }
