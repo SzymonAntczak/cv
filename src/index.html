@@ -60,7 +60,11 @@
     <main>
       <header>
         <div>
-          <img src="/about-me.jpg" alt="Zdjęcie Szymona Antczaka" />
+          <img
+            id="about-me-img"
+            src="/about-me.jpg"
+            alt="Zdjęcie Szymona Antczaka"
+          />
           <div>
             <div>
               <h1>Szymon Antczak</h1>
@@ -209,6 +213,16 @@
             </p>
           </li>
         </ul>
+
+        <p>
+          Powyższa lista to główne umiejętności, które posiadam, jednak oprócz
+          nich mógłbym wymienić również: <strong>RxJS</strong>,
+          <strong>TailwindCSS</strong>, <strong>Jest</strong>,
+          <strong>Git</strong>, <strong>GraphQL</strong>, <strong>HTMX</strong>,
+          <strong>Bun</strong>, <strong>Elysia.js</strong>,
+          <strong>Docker</strong> czy
+          <strong>język angielski na poziomie B2</strong>.
+        </p>
       </section>
 
       <section id="experience">
@@ -217,28 +231,37 @@
         <ol reversed>
           <% experience.forEach(function(item) { %>
           <li>
-            <time class="period">
-              <%= item.startTime + ' - ' + item.endTime%>
-            </time>
+            <p class="period">
+              <time
+                datetime="<%= item.startTime.split('.').reverse().join('-') %>"
+              >
+                <%= item.startTime %>
+              </time>
+              -
+              <time
+                datetime="<%= item.endTime.split('.').reverse().join('-') %>"
+              >
+                <%= item.endTime %>
+              </time>
+            </p>
             <h3><%= item.company %>, <strong><%= item.role %></strong></h3>
-
             <dl>
-              <dd>
+              <dt>
                 <strong>cele i obowiązki</strong>
-              </dd>
-              <dt>
+              </dt>
+              <dd>
                 <p><%= item.description %></p>
-              </dt>
-              <dd>
-                <strong>osiągnięcia</strong>
               </dd>
               <dt>
-                <p><%= item.achievements %></p>
+                <strong>osiągnięcia</strong>
               </dt>
               <dd>
-                <strong>technologie</strong>
+                <p><%= item.achievements %></p>
               </dd>
-              <dt><%= item.techStack.join(', ') %></dt>
+              <dt>
+                <strong>technologie</strong>
+              </dt>
+              <dd><%= item.techStack.join(', ') %></dd>
             </dl>
           </li>
           <% }); %>
@@ -251,9 +274,11 @@
         <ol reversed>
           <% education.forEach(function(item) { %>
           <li>
-            <time class="period">
-              <%= item.startTime + ' - ' + item.endTime %>
-            </time>
+            <p class="period">
+              <time><%= item.startTime %></time>
+              -
+              <time><%= item.endTime %></time>
+            </p>
             <h3><%= item.school %></h3>
             <p>
               <% if (item.degree) { %> <%= item.degree + ' - ' %> <% } %> <%=

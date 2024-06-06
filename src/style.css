@@ -21,9 +21,9 @@ BREAKPOINTS
   :root {
     --color-primary: #087ca7;
     --color-primary-light: #05b2dc;
-    --color-accent: #b10f2e;
+    --color-accent: #00d084;
     --color-background: #222222;
-    --color-text: #f8f0fb;
+    --color-text: #f0f0f0;
     --color-gray: rgba(248, 240, 251, 0.15);
     --padding-inline-section: 3rem;
 
@@ -106,6 +106,10 @@ BREAKPOINTS
   background-color: var(--color-primary);
   transition: 0.3s all ease;
 
+  @media (max-width: 480px) {
+    padding: 0.25rem;
+  }
+
   &:hover {
     color: inherit;
     background-color: var(--color-primary-light);
@@ -113,6 +117,12 @@ BREAKPOINTS
 
   &.hidden {
     transform: translateY(calc(100% + var(--bottom-offset)));
+  }
+
+  span {
+    @media (max-width: 480px) {
+      font-size: 1.25rem;
+    }
   }
 }
 

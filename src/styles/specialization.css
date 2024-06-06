@@ -1,7 +1,14 @@
 #specialization {
   > p {
-    margin-block-end: 3rem;
     text-align: justify;
+
+    &:first-of-type {
+      margin-block-end: 3rem;
+    }
+
+    &:last-of-type {
+      margin-block-start: 3rem;
+    }
   }
 
   ul {

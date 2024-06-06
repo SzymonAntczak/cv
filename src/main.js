@@ -109,3 +109,15 @@ if (!isNotificationHidden) {
     notificationElement.remove();
   });
 }
+
+const aboutMeImg = document.querySelector("#about-me-img");
+handleAboutMeImgAria();
+window.addEventListener("resize", handleAboutMeImgAria);
+
+function handleAboutMeImgAria() {
+  if (window.innerWidth < 979) {
+    aboutMeImg.setAttribute("aria-hidden", true);
+  } else {
+    aboutMeImg.removeAttribute("aria-hidden");
+  }
+}
