@@ -25,6 +25,7 @@ BREAKPOINTS
     --color-background: #222222;
     --color-text: #f0f0f0;
     --color-gray: rgba(248, 240, 251, 0.15);
+    --color-error: #b10f2e;
     --padding-inline-section: 3rem;
 
     @media (max-width: 1200px) {
@@ -131,7 +132,7 @@ BREAKPOINTS
   inset-block-start: 0;
   inset-inline: 0;
   z-index: 10;
-  background-color: var(--color-accent);
+  background-color: var(--color-error);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,6 +145,8 @@ BREAKPOINTS
     margin: 0;
     font-weight: 500;
     font-size: 0.85rem;
+    color: white;
+    text-shadow: black 0 0 0.1rem;
   }
 
   button {
