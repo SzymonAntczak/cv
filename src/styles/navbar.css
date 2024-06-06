@@ -43,15 +43,17 @@
           padding: 0.5rem;
         }
 
-        &.active {
-          color: var(--color-accent);
+        &.active svg {
+          fill: var(--color-accent);
         }
 
-        .material-symbols-outlined {
-          font-size: 2.75rem;
+        svg {
+          inline-size: 2.75rem;
+          block-size: 2.75rem;
 
           @media (max-width: 767px) {
-            font-size: 2rem;
+            inline-size: 2rem;
+            block-size: 2rem;
           }
         }
       }

@@ -1,7 +1,6 @@
-@layer icons, globals;
+@layer globals;
 
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0")
-layer(icons);
+@import "./styles/fonts.css";
 @import "./styles/navbar.css";
 @import "./styles/main.css";
 @import "./styles/about-me.css";
@@ -66,7 +65,15 @@ BREAKPOINTS
 
     &:hover {
       color: var(--color-accent);
+
+      svg {
+        fill: var(--color-accent);
+      }
     }
+  }
+
+  svg {
+    transition: 0.3s fill ease;
   }
 
   p {
@@ -114,15 +121,20 @@ BREAKPOINTS
   &:hover {
     color: inherit;
     background-color: var(--color-primary-light);
+
+    svg {
+      fill: var(--color-text);
+    }
   }
 
   &.hidden {
     transform: translateY(calc(100% + var(--bottom-offset)));
   }
 
-  span {
+  svg {
     @media (max-width: 480px) {
-      font-size: 1.25rem;
+      inline-size: 1.25rem;
+      block-size: 1.25rem;
     }
   }
 }
