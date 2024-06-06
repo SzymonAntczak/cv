@@ -305,7 +305,7 @@
           <% portfolio.forEach(function(item) { %>
           <li>
             <figure>
-              <img src="<%= item.img %>" alt="<%= item.name %>" />
+              <img src="<%= item.img %>" alt="<%= item.name %>" loading="lazy" />
               <figcaption>
                 <a href="<%= item.href %>" target="_blank"><%= item.name %></a>
                 <small>Realizacja w ramach pracy dla <%= item.company %></small>
