@@ -53,13 +53,13 @@
         margin: 0;
         inline-size: 100%;
         block-size: 100%;
+        aspect-ratio: 16 / 9;
 
         .blur-load {
           background-size: cover;
           background-position: top center;
           position: relative;
           block-size: 100%;
-          aspect-ratio: 16 / 9;
 
           &::before {
             content: "";
@@ -69,8 +69,6 @@
           }
 
           &.loaded {
-            aspect-ratio: auto;
-
             &::before {
               content: none;
             }
@@ -83,7 +81,6 @@
           img {
             inline-size: 100%;
             block-size: 100%;
-            aspect-ratio: 16 / 9;
             object-fit: cover;
             object-position: top center;
             opacity: 0;

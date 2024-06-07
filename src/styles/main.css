@@ -122,7 +122,11 @@ main {
     margin-block-end: 2rem;
 
     h3 {
-      margin-block: 0.5rem 1rem;
+      margin-block: 0.5rem;
+
+      + p {
+        line-height: 1;
+      }
     }
 
     p {

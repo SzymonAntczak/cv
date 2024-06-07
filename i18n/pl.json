@@ -3,6 +3,7 @@
     {
       "role": "starszy programista frontend",
       "company": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
+      "additionalInfo": "*Przez większą część czasu pracowałem na 3/5 etatu, ponieważ wciąż kończyłem jeszcze projekt dla Scalo.",
       "description": "Naszym zadaniem (jako zespół frontendowy) było zaprojektowanie oraz wydanie wersji MVP dwóch projektów przeznaczonych na cele uczelni. Pracowaliśmy w SCRUM'ie, a sam zespół złożony był z wielu osób - backendowców, testerów, menadżerów itd.",
       "achievements": "Termin realizacji projektów był bardzo krótki, ale byliśmy w stanie zaprojektować na tyle elastyczną i skalowalną architekturę, że udało nam się zrealizować postawione przed nami zadanie.",
       "techStack": ["Next.js", "Typescript", "TailwindCSS"],
@@ -12,6 +13,7 @@
     {
       "role": "starszy programista frontend",
       "company": "1000i",
+      "additionalInfo": "*Była to przede wszystkim dodatkowa praca po godzinach.",
       "description": "Projekt przy którym pracowałem sam, a który polegał na przepisaniu poprzedniej wersji aplikacji na nową w celu poprawienia jej SEO oraz wydajności. Pierwsza wersja była napisana z wykorzystaniem Reacta, jednak postanowiłem wykorzystać Next.js, aby zapewnić Server Side Rendering oraz Static Site Generation.",
       "achievements": "Największym sukcesem tego projektu był wynik testu Lighthouse wersji produkcyjnej, który wyniósł kolejno 98 oraz 100 punktów przy wartościach 'performance' oraz 'SEO'. Dodatkowo udało mi się zrealizować projekt w niewiele ponad miesiąc.",
       "techStack": ["Next.js", "Typescript", "strapi", "Sass"],
@@ -21,6 +23,7 @@
     {
       "role": "programista frontend",
       "company": "Scalo",
+      "additionalInfo": "*W momencie rozpoczęcia pracy w AGH, przeszedłem na 2/5 etatu.",
       "description": "W ramach pracy dla Scalo byłem 'outsourcowany' do zewnętrznego klienta z branży finansowej, do działu cyberbezpieczeństwa. W tym projekcie byłem jedynym frontend developerem, a moim zadaniem było zaprojektowanie oraz development wewnętrznej aplkacji z użyciem Angulara w wersji 9+. Zespół uzupełniało 3 backendowców oraz menadżer projektu, a całość realizowana była w SCRUM'ie. Oprócz warstwy czysto frontendowej, odpowiedzialny byłem również za część UX/UI.",
       "achievements": "Nad projektem pracowałem 3 lata i przez ten czas urósł on do rozmiarów bardzo dużej aplikacji, zbudowanej z kilkudziesięciu modułów, która przy złej architekturze mogłaby być bardzo trudna w utrzymaniu. To, że udało mi się zaprojektować ją w taki sposób, aby tego uniknąć, jest moim największym osiągnięciem.",
       "techStack": ["Angular 9+", "Sass"],
