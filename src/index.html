@@ -6,7 +6,33 @@
     <link rel="stylesheet" href="/style.css" />
     <script type="module" src="./main.js" defer></script>
 
-    <title>CV Szymon Antczak</title>
+    <title>Szymon Antczak - Frontend Developer</title>
+    <meta
+      name="description"
+      content="Oficjalne CV Szymona Antczaka, Frontend Developera z Dolnośląskiego. Doświadczenie w tworzeniu aplikacji webowych oraz stron internetowych."
+    />
+    <meta
+      name="keywords"
+      content="Szymon Antczak, CV, Frontend Developer, Web Developer, Programista, HTML, CSS, JavaScript, Angular, React, Next.js, Accessibility, Web Components, Dolnośląskie, Wrocław, Oława"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Szymon Antczak",
+        "jobTitle": "Frontend Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Dolnośląskie"
+        },
+        "url": "https://szymonantczak.github.io/cv/",
+        "sameAs": [
+          "https://github.com/SzymonAntczak",
+          "https://www.linkedin.com/in/szymon-antczak-37697996/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <aside id="navbar">
@@ -402,24 +428,20 @@
       </footer>
     </main>
 
-    <a
-      id="scroll-up-btn"
-      class="hidden"
-      href="#about-me"
-      aria-hidden="true"
-      aria-label="O mnie"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24px"
-        viewBox="0 -960 960 960"
-        width="24px"
-        fill="#e8eaed"
-      >
-        <path
-          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
-        />
-      </svg>
-    </a>
+    <aside id="scroll-up" class="hidden" aria-hidden="true">
+      <a href="#about-me" aria-label="O mnie" tabindex="-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+          />
+        </svg>
+      </a>
+    </aside>
   </body>
 </html>

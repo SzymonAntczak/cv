@@ -105,36 +105,41 @@ BREAKPOINTS
   }
 }
 
-#scroll-up-btn {
+#scroll-up {
   --bottom-offset: 3rem;
   position: fixed;
   inset-block-end: var(--bottom-offset);
   inset-inline-end: var(--padding-inline-section);
-  padding: 0.5rem;
-  background-color: var(--color-primary);
-  transition: 0.3s all ease;
-
-  @media (max-width: 480px) {
-    padding: 0.25rem;
-  }
-
-  &:hover {
-    color: inherit;
-    background-color: var(--color-primary-light);
-
-    svg {
-      fill: var(--color-text);
-    }
-  }
+  transition: 0.3s transform ease;
 
   &.hidden {
     transform: translateY(calc(100% + var(--bottom-offset)));
   }
 
-  svg {
+  a {
+    padding: 0.5rem;
+    background-color: var(--color-primary);
+    display: block;
+
     @media (max-width: 480px) {
-      inline-size: 1.25rem;
-      block-size: 1.25rem;
+      padding: 0.25rem;
+    }
+
+    &:hover {
+      color: inherit;
+      background-color: var(--color-primary-light);
+      transition: 0.3s all ease;
+
+      svg {
+        fill: var(--color-text);
+      }
+    }
+
+    svg {
+      @media (max-width: 480px) {
+        inline-size: 1.25rem;
+        block-size: 1.25rem;
+      }
     }
   }
 }

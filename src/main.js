@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 const body = document.body;
 const html = document.documentElement;
-const scrollUpBtn = document.querySelector("#scroll-up-btn");
+const scrollUp = document.querySelector("#scroll-up");
 const documentHeight = Math.max(
   body.scrollHeight,
   body.offsetHeight,
@@ -25,16 +25,16 @@ document.addEventListener("scroll", ({ target }) => {
 
   if (
     topOffset >= scrollUpBtnVisibilityLimit &&
-    scrollUpBtn.classList.contains("hidden")
+    scrollUp.classList.contains("hidden")
   ) {
-    scrollUpBtn.classList.remove("hidden");
-    scrollUpBtn.setAttribute("aria-hidden", false);
+    scrollUp.classList.remove("hidden");
+    scrollUp.setAttribute("aria-hidden", false);
   } else if (
     topOffset < scrollUpBtnVisibilityLimit &&
-    !scrollUpBtn.classList.contains("hidden")
+    !scrollUp.classList.contains("hidden")
   ) {
-    scrollUpBtn.classList.add("hidden");
-    scrollUpBtn.setAttribute("aria-hidden", true);
+    scrollUp.classList.add("hidden");
+    scrollUp.setAttribute("aria-hidden", true);
   }
 });
 
