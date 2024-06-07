@@ -16,6 +16,18 @@ BREAKPOINTS
 --xl: 1200px;
 */
 
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
 @layer globals {
   :root {
     --color-primary: #087ca7;

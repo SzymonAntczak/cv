@@ -96,3 +96,19 @@ function handleAboutMeImgAria() {
     aboutMeImg.removeAttribute("aria-hidden");
   }
 }
+
+const blurLoads = document.querySelectorAll(".blur-load");
+
+blurLoads.forEach((blurLoad) => {
+  const img = blurLoad.querySelector("img");
+
+  function loaded() {
+    blurLoad.classList.add("loaded");
+  }
+
+  if (img.complete) {
+    loaded();
+  } else {
+    img.addEventListener("load", loaded);
+  }
+});

@@ -74,56 +74,64 @@
   "portfolio": [
     {
       "name": "Sevi Kebab",
-      "img": "/images/portfolio/sevikebab.png",
+      "img": "/images/portfolio/sevikebab.webp",
+      "imgMicro": "/images/portfolio/sevikebab-micro.webp",
       "description": "Opisik",
       "href": "https://sevikebab.pl/",
       "company": "Lithium"
     },
     {
       "name": "Bytom",
-      "img": "/images/portfolio/bytom.png",
+      "img": "/images/portfolio/bytom.webp",
+      "imgMicro": "/images/portfolio/bytom-micro.webp",
       "description": "Opisik",
       "href": "https://bytom.com.pl/",
       "company": "MediaAmbassador"
     },
     {
       "name": "Grzebieluch stomatologia",
-      "img": "/images/portfolio/grzebieluch.png",
+      "img": "/images/portfolio/grzebieluch.webp",
+      "imgMicro": "/images/portfolio/grzebieluch-micro.webp",
       "description": "Opisik",
       "href": "http://www.grzebieluch.pl/",
       "company": "Lithium"
     },
     {
       "name": "Qubus Hotel",
-      "img": "/images/portfolio/qubus.png",
+      "img": "/images/portfolio/qubus.webp",
+      "imgMicro": "/images/portfolio/qubus-micro.webp",
       "description": "Opisik",
       "href": "https://www.qubushotel.com/pl/",
       "company": "MediaAmbassador"
     },
     {
       "name": "BigStar",
-      "img": "/images/portfolio/bigstar.png",
+      "img": "/images/portfolio/bigstar.webp",
+      "imgMicro": "/images/portfolio/bigstar-micro.webp",
       "description": "Opisik",
       "href": "https://bigstar.pl/",
       "company": "MediaAmbassador"
     },
     {
       "name": "Callpage",
-      "img": "/images/portfolio/callpage.png",
+      "img": "/images/portfolio/callpage.webp",
+      "imgMicro": "/images/portfolio/callpage-micro.webp",
       "description": "Opisik",
       "href": "https://www.callpage.pl/",
       "company": "1000i"
     },
     {
       "name": "Willa pod błękitnym koniem",
-      "img": "/images/portfolio/willa.png",
+      "img": "/images/portfolio/willa.webp",
+      "imgMicro": "/images/portfolio/willa-micro.webp",
       "description": "Opisik",
       "href": "http://podblekitnymkoniem.pl/",
       "company": "Lithium"
     },
     {
       "name": "Notariuszka Wrocław",
-      "img": "/images/portfolio/notariuszka.png",
+      "img": "/images/portfolio/notariuszka.webp",
+      "imgMicro": "/images/portfolio/notariuszka-micro.webp",
       "description": "Opisik",
       "href": "https://notariuszkawroclaw.pl/",
       "company": "Lithium"

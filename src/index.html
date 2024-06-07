@@ -126,7 +126,7 @@
         <div>
           <img
             id="about-me-img"
-            src="/images/about-me.png"
+            src="/images/about-me.webp"
             alt="Zdjęcie Szymona Antczaka"
           />
           <div>
@@ -245,7 +245,7 @@
 
         <ul>
           <li>
-            <img src="/images/angular.png" alt="Logo Angulara" />
+            <img src="/images/angular.webp" alt="Logo Angulara" />
             <h3>Angular</h3>
             <p>
               Framework, w którym mam najwięcej doświadczenia (6 lat) i w którym
@@ -265,7 +265,7 @@
             </p>
           </li>
           <li>
-            <img src="/images/typescript.png" alt="Logo Typescripta" />
+            <img src="/images/typescript.webp" alt="Logo Typescripta" />
             <h3>TypeScript</h3>
             <p>
               Przez fakt, że sporo pracowałem z Angularem, naturalnym było
@@ -274,7 +274,7 @@
             </p>
           </li>
           <li>
-            <img src="/images/webc.png" alt="Logo Web Components" />
+            <img src="/images/webc.webp" alt="Logo Web Components" />
             <h3>Web Components</h3>
             <p>
               Web Components mogą stanowić świetne rozwiązanie w prostych
@@ -306,7 +306,7 @@
             </p>
           </li>
           <li>
-            <img src="/images/node.png" alt="Logo Node.js" />
+            <img src="/images/node.webp" alt="Logo Node.js" />
             <h3>Node.js</h3>
             <p>
               Specjalizuję się we frontendzie, jednak zdarzało mi się również
@@ -408,11 +408,17 @@
           <% portfolio.forEach(function(item) { %>
           <li>
             <figure>
-              <img
-                src="<%= item.img %>"
-                alt="<%= item.name %>"
-                loading="lazy"
-              />
+              <div
+                class="blur-load"
+                style="background-image: url(<%= item.imgMicro %>)"
+              >
+                <img
+                  src="<%= item.img %>"
+                  alt="<%= item.name %>"
+                  loading="lazy"
+                />
+              </div>
+
               <figcaption>
                 <a href="<%= item.href %>" target="_blank"><%= item.name %></a>
                 <small>Realizacja w ramach pracy dla <%= item.company %></small>
