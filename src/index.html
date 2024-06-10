@@ -350,7 +350,9 @@
             <h3><%= item.company %>, <strong><%= item.role %></strong></h3>
 
             <% if (item.additionalInfo) { %>
-            <p><small><%= item.additionalInfo %></small></p>
+            <p class="additional-info">
+              <small><%= item.additionalInfo %></small>
+            </p>
             <% } %>
 
             <dl>

@@ -118,19 +118,21 @@ main {
     }
   }
 
-  :is(#experience, #education) li:not(last-of-type) {
-    margin-block-end: 2rem;
+  :is(#experience, #education) li {
+    &:not(last-of-type) {
+      margin-block-end: 2rem;
+    }
 
     h3 {
-      margin-block: 0.5rem;
-
-      + p {
-        line-height: 1;
-      }
+      margin-block: 0.25rem;
     }
 
     p {
       margin: 0;
+
+      &.additional-info {
+        line-height: 1;
+      }
     }
   }
 
