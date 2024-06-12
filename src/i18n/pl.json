@@ -1,0 +1,266 @@
+{
+  "lang": "pl",
+  "navigation": [
+    {
+      "href": "#about-me",
+      "ariaLabel": "O mnie",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z'/></svg>"
+    },
+    {
+      "href": "#specialization",
+      "ariaLabel": "Specjalizacje",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z'/></svg>"
+    },
+    {
+      "href": "#experience",
+      "ariaLabel": "Doświadczenie",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z'/></svg>"
+    },
+    {
+      "href": "#education",
+      "ariaLabel": "Wykształcenie",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z'/></svg>"
+    },
+    {
+      "href": "#portfolio",
+      "ariaLabel": "Portfolio",
+      "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z'/></svg>"
+    }
+  ],
+  "header": {
+    "imgAriaLabel": "Zdjęcie Szymona Antczaka",
+    "contact": [
+      {
+        "href": "mailto:szymon0antczak@gmail.com",
+        "ariaLabel": "E-mail",
+        "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='#e8eaed'><path d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z'/></svg>"
+      },
+      {
+        "href": "https://www.linkedin.com/in/szymon-antczak-37697996",
+        "ariaLabel": "LinkedIn",
+        "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='#e8eaed'><path d='M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z'/></svg>"
+      },
+      {
+        "href": "https://github.com/SzymonAntczak",
+        "ariaLabel": "GitHub",
+        "icon": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512' fill='#e8eaed'><path d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z'/></svg>"
+      }
+    ]
+  },
+  "aboutMe": {
+    "title": "o mnie",
+    "age": "28 lat",
+    "description": "Cześć! Mam na imię Szymon i od 8 lat zajmuję się frontendem.<br /><br />Większość mojego zawodowego życia spędziłem wykorzystując framework Angular (od wersji 2), jednak uważam, że to nie znajomość konkretnego narzędzia jest najważniejsza, a umiejętność szybkiego przyswajania nowej wiedzy.<br />Dlatego nie chciałym przedstawiać się jako \"Angular developer\", \"React developer\" czy też \"[tu wstaw dowolną nazwę biblioteki] developer\", ale po prostu jako <em>\"frontend developer\"</em>, który potrafi dostosować się do zmieniających się warunków.<br /><br />W przeszłości miałem okazję pracować zarówno w małych zespołach, jak i w dużych korporacjach, co pozwoliło mi na zdobycie doświadczenia w wielu różnych obszarach. W pracy cenię sobie przed wszystkim możliwość ciągłego rozwoju, dlatego zawsze staram się szukać nowych wyzwań i okazji do nauki.<br /><br />To co chciałbym wnieść do Twojego zespołu, to przede wszystkim sposób myślenia, polegający na rozwiązywaniu problemów w sposób jak <strong>najprostszy</strong> i jak najbardziej <strong>efektywny</strong>. Uważam, że powinno się dobierać odpowiednie narzędzia do konkretnego problemu, a nie na odwrót. Nie lubię komplikować życia ani sobie, ani innym, dlatego zawsze staram się tak dobrać rozwiązania, aby zrealizować postawione przed mną zadanie w najbardziej <strong>optymalny</strong> sposób.<br /><br />Jestem osobą bezkonfliktową, spokojną i zawsze gotową do pomocy. Cenię sobie pracę w zespole, ponieważ uważam, że to właśnie praca w grupie pozwala na osiągnięcie najlepszych rezultatów. Wierzę, że każdy z nas ma coś do zaoferowania, dlatego zawsze staram się słuchać innych i uczyć od nich.<br /><br />Poza pracą interesuję się przede wszystkim sportem (w szczególności tenisem oraz piłką nożną), a w wolnym czasie lubię również poczytać książkę lub popracować na działce."
+  },
+  "specialization": {
+    "title": "Specjalizacje",
+    "description": "Poniżej znajdziesz listę technologii/zagadnień, w których czuję się najpewniej. Nie wypisywałem tutaj takich rzeczy jak <strong>HTML</strong>, <strong>CSS</strong> czy <strong>JavaScript</strong>, ponieważ według mnie jest to podstawa pracy jako frontend developer.",
+    "techStack": [
+      {
+        "img": {
+          "src": "/images/angular.webp",
+          "alt": "Logo Angulara"
+        },
+        "name": "Angular",
+        "description": "Framework, w którym mam najwięcej doświadczenia (6 lat) i w którym czuję się najbardziej komfortowo. Świetny wybór do dużych projektów, ponieważ Angular odostępnia nam również ogromny zestaw narzędzi do zarządzania aplikacją."
+      },
+      {
+        "img": {
+          "src": "/images/react.webp",
+          "alt": "Logo Reacta"
+        },
+        "name": "React",
+        "description": "React oraz Next.js to technologie, w których pracuję jedynie rok, jednak dzięki temu, że posiadałem już wcześniej spore doświadczenie z innym frameworkiem, ich nauka nie sprawiła mi problemu i również w nich czuję się bardzo swobodnie."
+      },
+      {
+        "img": {
+          "src": "/images/typescript.webp",
+          "alt": "Logo TypeScripta"
+        },
+        "name": "TypeScript",
+        "description": "Przez fakt, że sporo pracowałem z Angularem, naturalnym było dogłębne poznanie TypeScripta, którego uważam za bardzo ważne narzędzie pracy, szczególnie nad dużymi projektami zespołowymi."
+      },
+      {
+        "img": {
+          "src": "/images/webc.webp",
+          "alt": "Logo Web Components"
+        },
+        "name": "Web Components",
+        "description": "Web Components mogą stanowić świetne rozwiązanie w prostych projektach nieopartych na frameworkach, w których chcemy wykorzystać podejście komponentowe. Wielkim ich atutem jest to, że mogą być bezproblemowo używane w każdym frameworku, dlatego mogą stanowić bardzo dobrą bibliotekę komponentów."
+      },
+      {
+        "icon": "<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M480-720q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720ZM360-80v-520H120v-80h720v80H600v520h-80v-240h-80v240h-80Z'/></svg>",
+        "name": "Dostępność",
+        "description": "Dostępność jeszcze kilka lat temu nie była najistotniejszą kwestią (niestety), jednak aktualnie jest to jedna z najważniejszych rzeczy, którą powinno dostarczać się w każdym projekcie. Dla mnie jest to zdecydowanie priorytetowe zadanie podczas tworzenia aplikacji."
+      },
+      {
+        "img": {
+          "src": "/images/node.webp",
+          "alt": "Logo Node.js"
+        },
+        "name": "Node.js",
+        "description": "Specjalizuję się we frontendzie, jednak zdarzało mi się również pracować z Node.js przy tworzeniu prostych API. W przyszłości na pewno chciałbym poszerzać swoją wiedzę w zakresie Node.js oraz ogólnorozumianego backendu."
+      }
+    ],
+    "additionalTechStack": "Powyższa lista to główne umiejętności, które posiadam, jednak oprócz nich mógłbym wymienić również: <strong>RxJS</strong>, <strong>TailwindCSS</strong>, <strong>Jest</strong>, <strong>Git</strong>, <strong>GraphQL</strong>, <strong>HTMX</strong>, <strong>Bun</strong>, <strong>Elysia.js</strong>, <strong>Docker</strong> czy <strong>język angielski na poziomie B2</strong>."
+  },
+  "experience": {
+    "title": "doświadczenie",
+    "goals": "cele i obowiązki",
+    "achievements": "osiągnięcia",
+    "techStack": "technologie",
+    "previousWork": [
+      {
+        "role": "starszy programista frontend",
+        "company": "Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie",
+        "additionalInfo": "*Przez większą część czasu pracowałem na 3/5 etatu, ponieważ wciąż kończyłem jeszcze projekt dla Scalo.",
+        "description": "Naszym zadaniem (jako zespół frontendowy) było zaprojektowanie oraz wydanie wersji MVP dwóch projektów przeznaczonych na cele uczelni. Pracowaliśmy w SCRUM'ie, a sam zespół złożony był z wielu osób - backendowców, testerów, menadżerów itd.",
+        "achievements": "Termin realizacji projektów był bardzo krótki, ale byliśmy w stanie zaprojektować na tyle elastyczną i skalowalną architekturę, że udało nam się zrealizować postawione przed nami zadanie.",
+        "techStack": ["Next.js", "Typescript", "TailwindCSS"],
+        "startTime": "03.2023",
+        "endTime": "12.2023"
+      },
+      {
+        "role": "starszy programista frontend",
+        "company": "1000i",
+        "additionalInfo": "*Była to przede wszystkim dodatkowa praca po godzinach.",
+        "description": "Projekt przy którym pracowałem sam, a który polegał na przepisaniu poprzedniej wersji aplikacji na nową w celu poprawienia jej SEO oraz wydajności. Pierwsza wersja była napisana z wykorzystaniem Reacta, jednak postanowiłem wykorzystać Next.js, aby zapewnić Server Side Rendering oraz Static Site Generation.",
+        "achievements": "Największym sukcesem tego projektu był wynik testu Lighthouse wersji produkcyjnej, który wyniósł kolejno 98 oraz 100 punktów przy wartościach 'performance' oraz 'SEO'. Dodatkowo udało mi się zrealizować projekt w niewiele ponad miesiąc.",
+        "techStack": ["Next.js", "Typescript", "strapi", "Sass"],
+        "startTime": "02.2023",
+        "endTime": "12.2023"
+      },
+      {
+        "role": "programista frontend",
+        "company": "Scalo",
+        "additionalInfo": "*W momencie rozpoczęcia pracy w AGH, przeszedłem na 2/5 etatu.",
+        "description": "W ramach pracy dla Scalo byłem 'outsourcowany' do zewnętrznego klienta z branży finansowej, do działu cyberbezpieczeństwa. W tym projekcie byłem jedynym frontend developerem, a moim zadaniem było zaprojektowanie oraz development wewnętrznej aplkacji z użyciem Angulara w wersji 9+. Zespół uzupełniało 3 backendowców oraz menadżer projektu, a całość realizowana była w SCRUM'ie. Oprócz warstwy czysto frontendowej, odpowiedzialny byłem również za część UX/UI.",
+        "achievements": "Nad projektem pracowałem 3 lata i przez ten czas urósł on do rozmiarów bardzo dużej aplikacji, zbudowanej z kilkudziesięciu modułów, która przy złej architekturze mogłaby być bardzo trudna w utrzymaniu. To, że udało mi się zaprojektować ją w taki sposób, aby tego uniknąć, jest moim największym osiągnięciem.",
+        "techStack": ["Angular 9+", "Sass"],
+        "startTime": "04.2020",
+        "endTime": "09.2023"
+      },
+      {
+        "role": "programista frontend",
+        "company": "MediaAmbassador",
+        "description": "Praca, która polegała na realizowaniu wielu projektów z branży e-commerce. Większość z nich była tworzona z użyciem Angulara, jednak te starsze, które należało utrzymywać, bazowały na narzędziach takich jak JQuery czy AngularJS. Pracowaliśmy nad kilkoma projektami na raz, w małych zespołach, w których panowała duża rotacja projektów.",
+        "achievements": "Najważniejszym osiągnięciem było wypracowanie wraz zespołem modelu pracy, który umożliwił nam seryjną realizację projektów w krótkim czasie, przy jednoczesnym zachowaniu wysokiej jakości kodu. Byliśmy zdolni do oddawania jednego sklepu internetowego co ok. 1-2 miesiące.",
+        "techStack": ["Angular 2+", "Sass"],
+        "startTime": "03.2018",
+        "endTime": "04.2020"
+      },
+      {
+        "role": "młodszy programista frontend",
+        "company": "Appevo",
+        "description": "Była to swoista kontynuacja pracy w Lithium. Miałem okazję ugruntować swoją wiedzę i umiejętności, których nauczyłem się w poprzednim miejscu pracy.",
+        "achievements": "Udało mi się stworzyć swego rodzaju 'setup bazowy', dzięki któremu łatwiej było mi zaczynać każdy kolejny projekt i który bardzo ułatwiał mi początkowe prace.",
+        "techStack": ["HTML", "CSS/Sass", "JQuery", "WordPress"],
+        "startTime": "01.2017",
+        "endTime": "08.2017"
+      },
+      {
+        "role": "młodszy programista frontend",
+        "company": "Lithium",
+        "description": "Moim zadaniem było programowanie prostych stron internetowych (w ścisłej współpracy z designerem) wraz z późniejszym wdrożeniem ich na Wordpressa. Nie licząc wsparcia merytorycznego senior developera, nad częścią developerską pracowałem samodzielnie.",
+        "achievements": "Jako, że nie miałem wielkiego doświadczenia we frontendzie, to samo realizowanie projektów bez opóźnień było dla mnie dużym osiągnięciem.",
+        "techStack": ["HTML", "CSS/Sass", "JQuery", "WordPress"],
+        "startTime": "09.2016",
+        "endTime": "01.2017"
+      }
+    ]
+  },
+  "education": {
+    "title": "wykształcenie",
+    "specialization": "Specjalizacja",
+    "schools": [
+      {
+        "name": "Politechnika Wrocławska",
+        "degree": "Inżynier",
+        "fieldOfStudy": "Elektronika",
+        "startTime": "2016",
+        "endTime": "2022",
+        "specialization": "zastosowania inżynierii komputerowej w technice"
+      },
+      {
+        "name": "Publiczne technikum nr 5 w Opolu",
+        "fieldOfStudy": "Technik informatyk",
+        "startTime": "2011",
+        "endTime": "2015"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "portfolio",
+    "description": "Poniższa galeria przedstawia tylko niektóre projekty realizowane przez firmy, w których miałem przyjemność pracować. Postanowiłem umieścić tylko takie, w których mój udział był duży lub bardzo duży. Niestety większość z nich to projekty sprzed paru lat, ponieważ te najnowsze były do użytku wewnętrznego i nie ma możliwości ich pokazania.",
+    "createdBy": "Realizacja w ramach pracy dla",
+    "projects": [
+      {
+        "name": "Sevi Kebab",
+        "img": "/images/portfolio/sevikebab.webp",
+        "imgMicro": "/images/portfolio/sevikebab-micro.webp",
+        "description": "Opisik",
+        "href": "https://sevikebab.pl/",
+        "company": "Lithium"
+      },
+      {
+        "name": "Bytom",
+        "img": "/images/portfolio/bytom.webp",
+        "imgMicro": "/images/portfolio/bytom-micro.webp",
+        "description": "Opisik",
+        "href": "https://bytom.com.pl/",
+        "company": "MediaAmbassador"
+      },
+      {
+        "name": "Grzebieluch stomatologia",
+        "img": "/images/portfolio/grzebieluch.webp",
+        "imgMicro": "/images/portfolio/grzebieluch-micro.webp",
+        "description": "Opisik",
+        "href": "http://www.grzebieluch.pl/",
+        "company": "Lithium"
+      },
+      {
+        "name": "Qubus Hotel",
+        "img": "/images/portfolio/qubus.webp",
+        "imgMicro": "/images/portfolio/qubus-micro.webp",
+        "description": "Opisik",
+        "href": "https://www.qubushotel.com/pl/",
+        "company": "MediaAmbassador"
+      },
+      {
+        "name": "BigStar",
+        "img": "/images/portfolio/bigstar.webp",
+        "imgMicro": "/images/portfolio/bigstar-micro.webp",
+        "description": "Opisik",
+        "href": "https://bigstar.pl/",
+        "company": "MediaAmbassador"
+      },
+      {
+        "name": "Callpage",
+        "img": "/images/portfolio/callpage.webp",
+        "imgMicro": "/images/portfolio/callpage-micro.webp",
+        "description": "Opisik",
+        "href": "https://www.callpage.pl/",
+        "company": "1000i"
+      },
+      {
+        "name": "Willa pod błękitnym koniem",
+        "img": "/images/portfolio/willa.webp",
+        "imgMicro": "/images/portfolio/willa-micro.webp",
+        "description": "Opisik",
+        "href": "http://podblekitnymkoniem.pl/",
+        "company": "Lithium"
+      },
+      {
+        "name": "Notariuszka Wrocław",
+        "img": "/images/portfolio/notariuszka.webp",
+        "imgMicro": "/images/portfolio/notariuszka-micro.webp",
+        "description": "Opisik",
+        "href": "https://notariuszkawroclaw.pl/",
+        "company": "Lithium"
+      }
+    ]
+  },
+  "footer": {
+    "author": "Autor"
+  }
+}

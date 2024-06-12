@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/main.js" defer></script>
+
+    <title>Szymon Antczak - Frontend Developer</title>
+    <meta
+      name="description"
+      content="Oficjalne CV Szymona Antczaka, Frontend Developera z Dolnośląskiego. Doświadczenie w tworzeniu aplikacji webowych oraz stron internetowych."
+    />
+    <meta
+      name="keywords"
+      content="Szymon Antczak, CV, Frontend Developer, Web Developer, Programista, HTML, CSS, JavaScript, Angular, React, Next.js, Accessibility, Web Components, Dolnośląskie, Wrocław, Oława"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Szymon Antczak",
+        "jobTitle": "Frontend Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Dolnośląskie"
+        },
+        "url": "https://szymonantczak.github.io/cv/",
+        "sameAs": [
+          "https://github.com/SzymonAntczak",
+          "https://www.linkedin.com/in/szymon-antczak-37697996/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <aside id="navbar">
+      <div>
+        <a href="#about-me" aria-label="<%= navigation[0].ariaLabel %>">SA</a>
+
+        <nav>
+          <ul>
+            <% navigation.forEach(function(item) { %>
+            <li>
+              <a href="<%= item.href %>" aria-label="<%= item.ariaLabel %>">
+                <%- item.icon %>
+              </a>
+            </li>
+            <% }) %>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <header>
+        <div>
+          <img
+            id="about-me-img"
+            src="/images/about-me.webp"
+            alt="<%= header.imgAriaLabel %>"
+          />
+          <div>
+            <div>
+              <h1>Szymon Antczak</h1>
+
+              <% header.contact.forEach(function(item) { %>
+              <a
+                href="<%= item.href %>"
+                target="_blank"
+                aria-label="<%= item.ariaLabel %>"
+              >
+                <%- item.icon %>
+              </a>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <article id="about-me">
+        <header>
+          <hgroup>
+            <h2 class="section-title"><%= aboutMe.title %></h2>
+            <p>
+              <strong>frontend developer</strong>
+              <span>/</span>
+              <%= aboutMe.age %>
+            </p>
+          </hgroup>
+        </header>
+
+        <p><%- aboutMe.description %></p>
+      </article>
+
+      <section id="specialization">
+        <header>
+          <h2 class="section-title"><%= specialization.title %></h2>
+        </header>
+
+        <p><%- specialization.description %></p>
+
+        <ul>
+          <% specialization.techStack.forEach(function(item) { %>
+          <li>
+            <% if (item.img) { %>
+            <img src="<%= item.img.src %>" alt="<%= item.img.alt %>" />
+            <% } else { %> <%- item.icon %> <% } %>
+            <h3><%= item.name %></h3>
+            <p><%= item.description %></p>
+          </li>
+          <% }) %>
+        </ul>
+
+        <p><%- specialization.additionalTechStack %></p>
+      </section>
+
+      <section id="experience">
+        <h2 class="section-title"><%= experience.title %></h2>
+
+        <ol reversed>
+          <% experience.previousWork.forEach(function(item) { %>
+          <li>
+            <p class="period">
+              <time
+                datetime="<%= item.startTime.split('.').reverse().join('-') %>"
+              >
+                <%= item.startTime %>
+              </time>
+              -
+              <time
+                datetime="<%= item.endTime.split('.').reverse().join('-') %>"
+              >
+                <%= item.endTime %>
+              </time>
+            </p>
+            <h3><%= item.company %>, <strong><%= item.role %></strong></h3>
+
+            <% if (item.additionalInfo) { %>
+            <p class="additional-info">
+              <small><%= item.additionalInfo %></small>
+            </p>
+            <% } %>
+
+            <dl>
+              <dt>
+                <strong><%= experience.goals %></strong>
+              </dt>
+              <dd>
+                <p><%= item.description %></p>
+              </dd>
+              <dt>
+                <strong><%= experience.achievements %></strong>
+              </dt>
+              <dd>
+                <p><%= item.achievements %></p>
+              </dd>
+              <dt>
+                <strong><%= experience.techStack %></strong>
+              </dt>
+              <dd><%= item.techStack.join(', ') %></dd>
+            </dl>
+          </li>
+          <% }); %>
+        </ol>
+      </section>
+
+      <section id="education">
+        <h2 class="section-title"><%= education.title %></h2>
+
+        <ol reversed>
+          <% education.schools.forEach(function(item) { %>
+          <li>
+            <p class="period">
+              <time><%= item.startTime %></time>
+              -
+              <time><%= item.endTime %></time>
+            </p>
+            <h3><%= item.name %></h3>
+            <p>
+              <% if (item.degree) { %> <%= item.degree + ' - ' %> <% } %> <%=
+              item.fieldOfStudy %> <% if (item.specialization) { %>
+              <br /><%= education.specialization %>: <%= item.specialization %>
+              <% } %>
+            </p>
+          </li>
+          <% }); %>
+        </ol>
+      </section>
+
+      <section id="portfolio">
+        <h2 class="section-title"><%= portfolio.title %></h2>
+        <p><%= portfolio.description %></p>
+
+        <ul>
+          <% portfolio.projects.forEach(function(item) { %>
+          <li>
+            <figure>
+              <div
+                class="blur-load"
+                style="background-image: url(<%= item.imgMicro %>)"
+              >
+                <img
+                  src="<%= item.img %>"
+                  alt="<%= item.name %>"
+                  loading="lazy"
+                />
+              </div>
+
+              <figcaption>
+                <a href="<%= item.href %>" target="_blank"><%= item.name %></a>
+                <small><%= portfolio.createdBy %> <%= item.company %></small>
+              </figcaption>
+            </figure>
+          </li>
+          <% }); %>
+        </ul>
+      </section>
+
+      <footer>
+        <small><%= footer.author %>: Szymon Antczak, 2024</small>
+      </footer>
+    </main>
+
+    <aside id="scroll-up" class="hidden" aria-hidden="true">
+      <a
+        href="#about-me"
+        aria-label="<%= navigation[0].ariaLabel %>"
+        tabindex="-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+          />
+        </svg>
+      </a>
+    </aside>
+  </body>
+</html>
