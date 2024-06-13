@@ -26,7 +26,7 @@ export default defineConfig({
       name: "reload-html",
       handleHotUpdate({ file, server }) {
         if (file.endsWith(".html")) {
-          server.ws.send({
+          server.hot.send({
             type: "full-reload",
             path: "*",
           });
