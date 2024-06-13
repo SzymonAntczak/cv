@@ -64,20 +64,23 @@
             </button>
           </div>
 
+          <%= isDev %>
           <ul>
             <li>
               <a
                 href="<%= isDev ? '/' : '/cv/' %>"
                 class="<%= lang === 'pl' ? 'active' : '' %>"
-                >PL</a
               >
+                PL
+              </a>
             </li>
             <li>
               <a
                 href="<%= isDev ? '/en/' : '/cv/en/' %>"
                 class="<%= lang === 'en' ? 'active' : '' %>"
-                >EN</a
               >
+                EN
+              </a>
             </li>
           </ul>
         </footer>
