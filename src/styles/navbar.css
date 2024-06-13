@@ -13,7 +13,7 @@
     position: sticky;
     top: 0;
     padding-block: 1rem;
-    block-size: 100svh;
+    block-size: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
