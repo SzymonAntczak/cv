@@ -22,13 +22,24 @@ export default defineConfig({
   publicDir: "../public",
   plugins: [
     ViteEjsPlugin(generateData()),
+    {
+      name: "reload-html",
+      handleHotUpdate({ file, server }) {
+        if (file.endsWith(".html")) {
+          server.ws.send({
+            type: "full-reload",
+            path: "*",
+          });
+        }
+      },
+    },
   ],
   build: {
     outDir: "../docs",
     rollupOptions: {
       input: {
-        pl: resolve(__dirname, 'src/index.html'),
-        en: resolve(__dirname, 'src/en/index.html'),
+        pl: resolve(__dirname, "src/index.html"),
+        en: resolve(__dirname, "src/en/index.html"),
       },
     },
   },

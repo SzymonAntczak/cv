@@ -99,6 +99,20 @@ BREAKPOINTS
 
   button {
     cursor: pointer;
+    outline: none;
+    transition: 0.3s color ease;
+  }
+
+  dialog {
+    background: var(--color-background);
+    color: var(--color-text);
+    border: none;
+    box-shadow: black 0 0 1rem;
+
+    &::backdrop {
+      background-color: black;
+      opacity: 0.6;
+    }
   }
 
   .section-title {

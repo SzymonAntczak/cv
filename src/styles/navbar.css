@@ -16,8 +16,9 @@
     block-size: 100svh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    > a {
+    header a {
       color: var(--color-accent);
       font-size: 2rem;
       font-weight: 700;
@@ -29,31 +30,84 @@
       }
     }
 
-    nav {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    nav ul li a,
+    footer button {
+      display: block;
+      padding: 0.5rem 1rem;
 
-      ul li a {
-        display: block;
-        padding: 0.5rem 1rem;
+      @media (max-width: 767px) {
+        padding: 0.5rem;
+      }
+
+      svg {
+        inline-size: 2.75rem;
+        block-size: 2.75rem;
 
         @media (max-width: 767px) {
-          padding: 0.5rem;
+          inline-size: 2rem;
+          block-size: 2rem;
         }
+      }
+    }
 
-        &.active svg {
-          fill: var(--color-accent);
-        }
+    nav ul li a.active svg {
+      fill: var(--color-accent);
+    }
 
-        svg {
-          inline-size: 2.75rem;
-          block-size: 2.75rem;
+    footer {
+      .font-size-options {
+        margin-block: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 0.9rem;
 
           @media (max-width: 767px) {
-            inline-size: 2rem;
-            block-size: 2rem;
+            font-size: 0.8rem;
+          }
+        }
+
+        button {
+          border: none;
+          background: none;
+          color: var(--color-text);
+          font-size: 1.25rem;
+          padding: 0.25rem;
+
+          @media (max-width: 767px) {
+            font-size: 1rem;
+            padding: 0.2rem;
+          }
+
+          &:hover {
+            color: var(--color-accent);
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+
+        @media (max-width: 767px) {
+          gap: 0.25rem;
+        }
+
+        li a {
+          font-size: 0.9rem;
+          padding-block: 0.25rem;
+          padding-inline: 0.1rem;
+
+          @media (max-width: 767px) {
+            font-size: 0.75rem;
+          }
+
+          &.active {
+            text-decoration: underline;
+            text-underline-offset: 0.2rem;
           }
         }
       }

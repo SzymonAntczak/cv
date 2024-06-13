@@ -112,3 +112,29 @@ blurLoads.forEach((blurLoad) => {
     img.addEventListener("load", loaded);
   }
 });
+
+const decreaseFontSizeBtn = document.querySelector("#decrease-font-size");
+const increaseFontSizeBtn = document.querySelector("#increase-font-size");
+
+const getCurrentFontSize = () =>
+  parseInt(getComputedStyle(document.documentElement).fontSize);
+
+const setDocumentFontSize = (size) => {
+  document.documentElement.style.fontSize = `${size}px`;
+};
+
+decreaseFontSizeBtn.addEventListener("click", () => {
+  const currentFontSize = getCurrentFontSize();
+
+  if (currentFontSize <= 12) return;
+
+  setDocumentFontSize(currentFontSize - 1);
+});
+
+increaseFontSizeBtn.addEventListener("click", () => {
+  const currentFontSize = getCurrentFontSize();
+
+  if (currentFontSize >= 20) return;
+
+  setDocumentFontSize(currentFontSize + 1);
+});

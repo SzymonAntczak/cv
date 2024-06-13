@@ -37,7 +37,9 @@
   <body>
     <aside id="navbar">
       <div>
-        <a href="#about-me" aria-label="<%= navigation[0].ariaLabel %>">SA</a>
+        <header>
+          <a href="#about-me" aria-label="<%= navigation[0].ariaLabel %>">SA</a>
+        </header>
 
         <nav>
           <ul>
@@ -50,6 +52,27 @@
             <% }) %>
           </ul>
         </nav>
+
+        <footer>
+          <div class="font-size-options">
+            <button id="decrease-font-size" aria-label="Zmniejsz czcionkę">
+              -
+            </button>
+            <span aria-hidden="true">Aa</span>
+            <button id="increase-font-size" aria-label="Zwiększ czcionkę">
+              +
+            </button>
+          </div>
+
+          <ul>
+            <li>
+              <a href="/" class="<%= lang === 'pl' ? 'active' : '' %>">PL</a>
+            </li>
+            <li>
+              <a href="/en/" class="<%= lang === 'en' ? 'active' : '' %>">EN</a>
+            </li>
+          </ul>
+        </footer>
       </div>
     </aside>
 
