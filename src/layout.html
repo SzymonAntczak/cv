@@ -66,10 +66,18 @@
 
           <ul>
             <li>
-              <a href="/" class="<%= lang === 'pl' ? 'active' : '' %>">PL</a>
+              <a
+                href="<%= isDev ? '/' : '/cv/' %>"
+                class="<%= lang === 'pl' ? 'active' : '' %>"
+                >PL</a
+              >
             </li>
             <li>
-              <a href="en/" class="<%= lang === 'en' ? 'active' : '' %>">EN</a>
+              <a
+                href="<%= isDev ? '/en/' : '/cv/en/' %>"
+                class="<%= lang === 'en' ? 'active' : '' %>"
+                >EN</a
+              >
             </li>
           </ul>
         </footer>
