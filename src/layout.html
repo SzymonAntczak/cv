@@ -54,30 +54,23 @@
         </nav>
 
         <footer>
-          <div class="font-size-options">
-            <button id="decrease-font-size" aria-label="Zmniejsz czcionkę">
-              -
-            </button>
-            <span aria-hidden="true">Aa</span>
-            <button id="increase-font-size" aria-label="Zwiększ czcionkę">
-              +
-            </button>
-          </div>
+          <button
+            id="language-button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="language-menu"
+            aria-label="<%= languageMenu.ariaLabel %>"
+          >
+            <span id="selected-language"><%= lang %></span>
+            <span class="chevron">▼</span>
+          </button>
 
-          <ul>
-            <li>
-              <a
-                href="<%= isDev ? '/' : '/cv/' %>"
-                class="<%= lang === 'pl' ? 'active' : '' %>"
-              >
-                PL
-              </a>
+          <ul id="language-menu" role="menu">
+            <li role="none">
+              <a href="<%= isDev ? '/' : '/cv/' %>" role="menuitem">PL</a>
             </li>
-            <li>
-              <a
-                href="<%= isDev ? '/en/' : '/cv/en/' %>"
-                class="<%= lang === 'en' ? 'active' : '' %>"
-              >
+            <li role="none">
+              <a href="<%= isDev ? '/en/' : '/cv/en/' %>" role="menuitem">
                 EN
               </a>
             </li>
@@ -91,8 +84,8 @@
         <div>
           <img
             id="about-me-img"
-            src="/images/about-me.webp"
-            alt="<%= header.imgAriaLabel %>"
+            src="<%= header.img.src %>"
+            alt="<%= header.img.alt %>"
           />
           <div>
             <div>
@@ -127,15 +120,15 @@
         <p><%- aboutMe.description %></p>
       </article>
 
-      <section id="specialization">
+      <section id="specializations">
         <header>
-          <h2 class="section-title"><%= specialization.title %></h2>
+          <h2 class="section-title"><%= specializations.title %></h2>
         </header>
 
-        <p><%- specialization.description %></p>
+        <p><%- specializations.description %></p>
 
         <ul>
-          <% specialization.techStack.forEach(function(item) { %>
+          <% specializations.techStack.forEach(function(item) { %>
           <li>
             <% if (item.img) { %>
             <img src="<%= item.img.src %>" alt="<%= item.img.alt %>" />
@@ -146,7 +139,7 @@
           <% }) %>
         </ul>
 
-        <p><%- specialization.additionalTechStack %></p>
+        <p><%- specializations.additionalTechStack %></p>
       </section>
 
       <section id="experience">

@@ -113,28 +113,55 @@ blurLoads.forEach((blurLoad) => {
   }
 });
 
-const decreaseFontSizeBtn = document.querySelector("#decrease-font-size");
-const increaseFontSizeBtn = document.querySelector("#increase-font-size");
+const languageMenuButton = document.getElementById("language-button");
+const languageMenuIcon = languageMenuButton.querySelector(".chevron");
+const languageMenu = document.getElementById("language-menu");
 
-const getCurrentFontSize = () =>
-  parseInt(getComputedStyle(document.documentElement).fontSize);
+languageMenuButton.addEventListener("click", () => {
+  const expanded = languageMenuButton.getAttribute("aria-expanded") === "true";
 
-const setDocumentFontSize = (size) => {
-  document.documentElement.style.fontSize = `${size}px`;
-};
-
-decreaseFontSizeBtn.addEventListener("click", () => {
-  const currentFontSize = getCurrentFontSize();
-
-  if (currentFontSize <= 12) return;
-
-  setDocumentFontSize(currentFontSize - 1);
+  languageMenuButton.setAttribute("aria-expanded", !expanded);
+  languageMenuIcon.style.rotate = expanded ? "0deg" : "180deg";
+  languageMenu.style.display = expanded ? "none" : "block";
 });
 
-increaseFontSizeBtn.addEventListener("click", () => {
-  const currentFontSize = getCurrentFontSize();
-
-  if (currentFontSize >= 20) return;
-
-  setDocumentFontSize(currentFontSize + 1);
+document.addEventListener("click", ({ target }) => {
+  if (!languageMenuButton.contains(target) && !languageMenu.contains(target)) {
+    closeLanguageMenu();
+  }
 });
+
+languageMenuButton.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowDown") {
+    event.preventDefault();
+    languageMenu.querySelector("a").focus();
+  }
+});
+
+languageMenu.addEventListener("keydown", (event) => {
+  const items = Array.from(languageMenu.querySelectorAll("a"));
+  const currentIndex = items.indexOf(document.activeElement);
+
+  switch (event.key) {
+    case "ArrowDown":
+      event.preventDefault();
+      const nextIndex = (currentIndex + 1) % items.length;
+      items[nextIndex].focus();
+      break;
+    case "ArrowUp":
+      event.preventDefault();
+      const prevIndex = (currentIndex - 1 + items.length) % items.length;
+      items[prevIndex].focus();
+      break;
+    case "Escape":
+      languageMenuButton.focus();
+      closeLanguageMenu();
+      break;
+  }
+});
+
+function closeLanguageMenu() {
+  languageMenuButton.setAttribute("aria-expanded", "false");
+  languageMenuIcon.style.rotate = "0deg";
+  languageMenu.style.display = "none";
+}

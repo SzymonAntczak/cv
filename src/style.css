@@ -5,7 +5,7 @@
 @import "./styles/main.css";
 @import "./styles/about-me.css";
 @import "./styles/experience.css";
-@import "./styles/specialization.css";
+@import "./styles/specializations.css";
 @import "./styles/portfolio.css";
 
 /*
@@ -99,7 +99,6 @@ BREAKPOINTS
 
   button {
     cursor: pointer;
-    outline: none;
     transition: 0.3s color ease;
   }
 

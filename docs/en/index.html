@@ -31,39 +31,39 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="../assets/main-CD__t871.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/main-Du9VAPbM.css">
+    <script type="module" crossorigin src="../assets/main-D0UdSHfe.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/main-Dqsfw3oM.css">
   </head>
   <body>
     <aside id="navbar">
       <div>
         <header>
-          <a href="#about-me" aria-label="O mnie">SA</a>
+          <a href="#about-me" aria-label="About me">SA</a>
         </header>
 
         <nav>
           <ul>
             
             <li>
-              <a href="#about-me" aria-label="O mnie">
+              <a href="#about-me" aria-label="About me">
                 <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z'/></svg>
               </a>
             </li>
             
             <li>
-              <a href="#specialization" aria-label="Specjalizacje">
+              <a href="#specializations" aria-label="Specializations">
                 <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z'/></svg>
               </a>
             </li>
             
             <li>
-              <a href="#experience" aria-label="Doświadczenie">
+              <a href="#experience" aria-label="Experience">
                 <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z'/></svg>
               </a>
             </li>
             
             <li>
-              <a href="#education" aria-label="Wykształcenie">
+              <a href="#education" aria-label="Education">
                 <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z'/></svg>
               </a>
             </li>
@@ -78,30 +78,23 @@
         </nav>
 
         <footer>
-          <div class="font-size-options">
-            <button id="decrease-font-size" aria-label="Zmniejsz czcionkę">
-              -
-            </button>
-            <span aria-hidden="true">Aa</span>
-            <button id="increase-font-size" aria-label="Zwiększ czcionkę">
-              +
-            </button>
-          </div>
+          <button
+            id="language-button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="language-menu"
+            aria-label="Choose language"
+          >
+            <span id="selected-language">en</span>
+            <span class="chevron">▼</span>
+          </button>
 
-          <ul>
-            <li>
-              <a
-                href="/cv/"
-                class=""
-              >
-                PL
-              </a>
+          <ul id="language-menu" role="menu">
+            <li role="none">
+              <a href="/cv/" role="menuitem">PL</a>
             </li>
-            <li>
-              <a
-                href="/cv/en/"
-                class="active"
-              >
+            <li role="none">
+              <a href="/cv/en/" role="menuitem">
                 EN
               </a>
             </li>
@@ -115,8 +108,8 @@
         <div>
           <img
             id="about-me-img"
-            src="../images/about-me.webp"
-            alt="Zdjęcie Szymona Antczaka"
+            src="../images/about-me-en.webp"
+            alt="Photo of Szymon Antczak"
           />
           <div>
             <div>
@@ -155,80 +148,80 @@
       <article id="about-me">
         <header>
           <hgroup>
-            <h2 class="section-title">o mnie</h2>
+            <h2 class="section-title">about me</h2>
             <p>
               <strong>frontend developer</strong>
               <span>/</span>
-              28 lat
+              28 y.o.
             </p>
           </hgroup>
         </header>
 
-        <p>Cześć! Mam na imię Szymon i od 8 lat zajmuję się frontendem.<br /><br />Większość mojego zawodowego życia spędziłem wykorzystując framework Angular (od wersji 2), jednak uważam, że to nie znajomość konkretnego narzędzia jest najważniejsza, a umiejętność szybkiego przyswajania nowej wiedzy.<br />Dlatego nie chciałym przedstawiać się jako "Angular developer", "React developer" czy też "[tu wstaw dowolną nazwę biblioteki] developer", ale po prostu jako <em>"frontend developer"</em>, który potrafi dostosować się do zmieniających się warunków.<br /><br />W przeszłości miałem okazję pracować zarówno w małych zespołach, jak i w dużych korporacjach, co pozwoliło mi na zdobycie doświadczenia w wielu różnych obszarach. W pracy cenię sobie przed wszystkim możliwość ciągłego rozwoju, dlatego zawsze staram się szukać nowych wyzwań i okazji do nauki.<br /><br />To co chciałbym wnieść do Twojego zespołu, to przede wszystkim sposób myślenia, polegający na rozwiązywaniu problemów w sposób jak <strong>najprostszy</strong> i jak najbardziej <strong>efektywny</strong>. Uważam, że powinno się dobierać odpowiednie narzędzia do konkretnego problemu, a nie na odwrót. Nie lubię komplikować życia ani sobie, ani innym, dlatego zawsze staram się tak dobrać rozwiązania, aby zrealizować postawione przed mną zadanie w najbardziej <strong>optymalny</strong> sposób.<br /><br />Jestem osobą bezkonfliktową, spokojną i zawsze gotową do pomocy. Cenię sobie pracę w zespole, ponieważ uważam, że to właśnie praca w grupie pozwala na osiągnięcie najlepszych rezultatów. Wierzę, że każdy z nas ma coś do zaoferowania, dlatego zawsze staram się słuchać innych i uczyć od nich.<br /><br />Poza pracą interesuję się przede wszystkim sportem (w szczególności tenisem oraz piłką nożną), a w wolnym czasie lubię również poczytać książkę lub popracować na działce.</p>
+        <p>Hi! My name is Szymon and I have been dealing with frontend for 8 years.<br /><br />I have spent most of my professional life using the Angular framework (since version 2), but I believe that it is not the knowledge of a specific tool that is most important, but the ability to quickly acquire new knowledge.<br />That's why I didn't want to introduce myself as "Angular developer", "React developer" or "[insert any library name here] developer", but simply as <em>"frontend developer"</em > who can adapt to changing conditions.<br /><br />In the past, I had the opportunity to work in both small teams and large corporations, which allowed me to gain experience in many different areas. At work, I value above all the opportunity for continuous development, which is why I always try to look for new challenges and opportunities to learn.<br /><br />What I would like to bring to your team is, above all, a way of thinking that involves solving problems in the simplest and most effective way possible. I believe that you should choose the right tools for a specific problem, not the other way around. I don't like to complicate life, either for myself or for others, so I always try to choose solutions to accomplish the task set before me in the most optimal way.<br /><br />I am a conflict-free, calm person and always ready to help. I value teamwork because I believe that it is teamwork that allows me to achieve the best results. I believe that each of us has something to offer, which is why I always try to listen to others and learn from them.<br /><br />Outside of work, I am mainly interested in sports (especially tennis and football), and in my free time I also like to read a book or work in the garden.</p>
       </article>
 
-      <section id="specialization">
+      <section id="specializations">
         <header>
-          <h2 class="section-title">Specjalizacje</h2>
+          <h2 class="section-title">specializations</h2>
         </header>
 
-        <p>Poniżej znajdziesz listę technologii/zagadnień, w których czuję się najpewniej. Nie wypisywałem tutaj takich rzeczy jak <strong>HTML</strong>, <strong>CSS</strong> czy <strong>JavaScript</strong>, ponieważ według mnie jest to podstawa pracy jako frontend developer.</p>
+        <p>Below you will find a list of technologies/topics in which I feel most confident. I didn't write here things like <strong>HTML</strong>, <strong>CSS</strong> or <strong>JavaScript</strong>, because in my opinion these are the basis of work as a frontend developer.</p>
 
         <ul>
           
           <li>
             
-            <img src="../images/angular.webp" alt="Logo Angulara" />
+            <img src="../images/angular.webp" alt="Angular logo" />
             
             <h3>Angular</h3>
-            <p>Framework, w którym mam najwięcej doświadczenia (6 lat) i w którym czuję się najbardziej komfortowo. Świetny wybór do dużych projektów, ponieważ Angular odostępnia nam również ogromny zestaw narzędzi do zarządzania aplikacją.</p>
+            <p>The framework in which I have the most experience (6 years) and in which I feel most comfortable. A great choice for large projects because Angular also provides us with a huge set of application management tools.</p>
           </li>
           
           <li>
             
-            <img src="../images/react.webp" alt="Logo Reacta" />
+            <img src="../images/react.webp" alt="React logo" />
             
             <h3>React</h3>
-            <p>React oraz Next.js to technologie, w których pracuję jedynie rok, jednak dzięki temu, że posiadałem już wcześniej spore doświadczenie z innym frameworkiem, ich nauka nie sprawiła mi problemu i również w nich czuję się bardzo swobodnie.</p>
+            <p>React and Next.js are technologies in which I have only been working for a year, but thanks to the fact that I already had a lot of experience with another framework, learning them was not a problem for me and I also feel very comfortable in them.</p>
           </li>
           
           <li>
             
-            <img src="../images/typescript.webp" alt="Logo TypeScripta" />
+            <img src="../images/typescript.webp" alt="TypeScript logo" />
             
             <h3>TypeScript</h3>
-            <p>Przez fakt, że sporo pracowałem z Angularem, naturalnym było dogłębne poznanie TypeScripta, którego uważam za bardzo ważne narzędzie pracy, szczególnie nad dużymi projektami zespołowymi.</p>
+            <p>Due to the fact that I worked a lot with Angular, it was natural to learn more about TypeScript, which I consider a very important tool, especially on large team projects.</p>
           </li>
           
           <li>
             
-            <img src="../images/webc.webp" alt="Logo Web Components" />
+            <img src="../images/webc.webp" alt="Web Components logo" />
             
             <h3>Web Components</h3>
-            <p>Web Components mogą stanowić świetne rozwiązanie w prostych projektach nieopartych na frameworkach, w których chcemy wykorzystać podejście komponentowe. Wielkim ich atutem jest to, że mogą być bezproblemowo używane w każdym frameworku, dlatego mogą stanowić bardzo dobrą bibliotekę komponentów.</p>
+            <p>Web Components can be a great solution for simple, non-framework-based projects where we want to use a component approach. Their great advantage is that they can be used seamlessly in any framework, so they can constitute a very good component library.</p>
           </li>
           
           <li>
              <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='M480-720q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720ZM360-80v-520H120v-80h720v80H600v520h-80v-240h-80v240h-80Z'/></svg> 
-            <h3>Dostępność</h3>
-            <p>Dostępność jeszcze kilka lat temu nie była najistotniejszą kwestią (niestety), jednak aktualnie jest to jedna z najważniejszych rzeczy, którą powinno dostarczać się w każdym projekcie. Dla mnie jest to zdecydowanie priorytetowe zadanie podczas tworzenia aplikacji.</p>
+            <h3>Accessibility</h3>
+            <p>Accessibility was not the most important issue a few years ago (unfortunately), but currently it is one of the most important things that should be provided in every project. For me, this is definitely a priority task when creating an application.</p>
           </li>
           
           <li>
             
-            <img src="../images/node.webp" alt="Logo Node.js" />
+            <img src="../images/node.webp" alt="Node.js logo" />
             
             <h3>Node.js</h3>
-            <p>Specjalizuję się we frontendzie, jednak zdarzało mi się również pracować z Node.js przy tworzeniu prostych API. W przyszłości na pewno chciałbym poszerzać swoją wiedzę w zakresie Node.js oraz ogólnorozumianego backendu.</p>
+            <p>I specialize in frontend, but I have also worked with Node.js to create simple APIs. In the future, I would definitely like to expand my knowledge of Node.js and the general backend.</p>
           </li>
           
         </ul>
 
-        <p>Powyższa lista to główne umiejętności, które posiadam, jednak oprócz nich mógłbym wymienić również: <strong>RxJS</strong>, <strong>TailwindCSS</strong>, <strong>Jest</strong>, <strong>Git</strong>, <strong>GraphQL</strong>, <strong>HTMX</strong>, <strong>Bun</strong>, <strong>Elysia.js</strong>, <strong>Docker</strong> czy <strong>język angielski na poziomie B2</strong>.</p>
+        <p>The above list is the main skills I have, but in addition to them I could also mention: <strong>RxJS</strong>, <strong>TailwindCSS</strong>, <strong>Jest</strong>, <strong>Git</strong>, <strong>GraphQL</strong>, <strong>HTMX</strong>, <strong>Bun</strong>, <strong>Elysia.js</strong>, <strong>Docker</strong> or <strong>English at B2 level</strong>.</p>
       </section>
 
       <section id="experience">
-        <h2 class="section-title">doświadczenie</h2>
+        <h2 class="section-title">experience</h2>
 
         <ol reversed>
           
@@ -246,29 +239,29 @@
                 12.2023
               </time>
             </p>
-            <h3>Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie, <strong>starszy programista frontend</strong></h3>
+            <h3>Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie, <strong>senior frontend developer</strong></h3>
 
             
             <p class="additional-info">
-              <small>*Przez większą część czasu pracowałem na 3/5 etatu, ponieważ wciąż kończyłem jeszcze projekt dla Scalo.</small>
+              <small>*I was working part-time most of the time because I was still finishing the project for Scalo.</small>
             </p>
             
 
             <dl>
               <dt>
-                <strong>cele i obowiązki</strong>
+                <strong>goals and responsibilities</strong>
               </dt>
               <dd>
-                <p>Naszym zadaniem (jako zespół frontendowy) było zaprojektowanie oraz wydanie wersji MVP dwóch projektów przeznaczonych na cele uczelni. Pracowaliśmy w SCRUM&#39;ie, a sam zespół złożony był z wielu osób - backendowców, testerów, menadżerów itd.</p>
+                <p>Our task (as a frontend team) was to design and release the MVP version of two projects intended for university purposes. We worked in SCRUM and the team itself consisted of many people - backend developers, testers, managers, etc.</p>
               </dd>
               <dt>
-                <strong>osiągnięcia</strong>
+                <strong>achievements</strong>
               </dt>
               <dd>
-                <p>Termin realizacji projektów był bardzo krótki, ale byliśmy w stanie zaprojektować na tyle elastyczną i skalowalną architekturę, że udało nam się zrealizować postawione przed nami zadanie.</p>
+                <p>The project implementation deadline was very short, but we were able to design such a flexible and scalable architecture that we managed to complete the task set before us.</p>
               </dd>
               <dt>
-                <strong>technologie</strong>
+                <strong>tech stack</strong>
               </dt>
               <dd>Next.js, Typescript, TailwindCSS</dd>
             </dl>
@@ -288,29 +281,29 @@
                 12.2023
               </time>
             </p>
-            <h3>1000i, <strong>starszy programista frontend</strong></h3>
+            <h3>1000i, <strong>senior frontend developer</strong></h3>
 
             
             <p class="additional-info">
-              <small>*Była to przede wszystkim dodatkowa praca po godzinach.</small>
+              <small>*It was primarily additional work after working hours</small>
             </p>
             
 
             <dl>
               <dt>
-                <strong>cele i obowiązki</strong>
+                <strong>goals and responsibilities</strong>
               </dt>
               <dd>
-                <p>Projekt przy którym pracowałem sam, a który polegał na przepisaniu poprzedniej wersji aplikacji na nową w celu poprawienia jej SEO oraz wydajności. Pierwsza wersja była napisana z wykorzystaniem Reacta, jednak postanowiłem wykorzystać Next.js, aby zapewnić Server Side Rendering oraz Static Site Generation.</p>
+                <p>A project on which I worked alone, which involved rewriting the previous version of the application into a new one in order to improve its SEO and performance. The first version was written using React, but I decided to use Next.js to provide Server Side Rendering and Static Site Generation.</p>
               </dd>
               <dt>
-                <strong>osiągnięcia</strong>
+                <strong>achievements</strong>
               </dt>
               <dd>
-                <p>Największym sukcesem tego projektu był wynik testu Lighthouse wersji produkcyjnej, który wyniósł kolejno 98 oraz 100 punktów przy wartościach &#39;performance&#39; oraz &#39;SEO&#39;. Dodatkowo udało mi się zrealizować projekt w niewiele ponad miesiąc.</p>
+                <p>The greatest success of this project was the Lighthouse test result of the production version, which was 98 and 100 points for the &#39;performance&#39; and &#39;SEO&#39; values. Additionally, I managed to complete the project in just over a month.</p>
               </dd>
               <dt>
-                <strong>technologie</strong>
+                <strong>tech stack</strong>
               </dt>
               <dd>Next.js, Typescript, strapi, Sass</dd>
             </dl>
@@ -330,29 +323,29 @@
                 09.2023
               </time>
             </p>
-            <h3>Scalo, <strong>programista frontend</strong></h3>
+            <h3>Scalo, <strong>frontend developer</strong></h3>
 
             
             <p class="additional-info">
-              <small>*W momencie rozpoczęcia pracy w AGH, przeszedłem na 2/5 etatu.</small>
+              <small>*When I started working at AGH, I started working part-time at Scalo.</small>
             </p>
             
 
             <dl>
               <dt>
-                <strong>cele i obowiązki</strong>
+                <strong>goals and responsibilities</strong>
               </dt>
               <dd>
-                <p>W ramach pracy dla Scalo byłem &#39;outsourcowany&#39; do zewnętrznego klienta z branży finansowej, do działu cyberbezpieczeństwa. W tym projekcie byłem jedynym frontend developerem, a moim zadaniem było zaprojektowanie oraz development wewnętrznej aplkacji z użyciem Angulara w wersji 9+. Zespół uzupełniało 3 backendowców oraz menadżer projektu, a całość realizowana była w SCRUM&#39;ie. Oprócz warstwy czysto frontendowej, odpowiedzialny byłem również za część UX/UI.</p>
+                <p>While working for Scalo, I was &#39;outsourced&#39; to an external client from the financial industry, to the cybersecurity department. I was the only front-end developer in this project, and my task was to design and develop an internal application using Angular version 9+. The team consisted of 3 backend specialists and a project manager, and the whole project was carried out in SCRUM. In addition to the purely frontend layer, I was also responsible for the UX/UI part.</p>
               </dd>
               <dt>
-                <strong>osiągnięcia</strong>
+                <strong>achievements</strong>
               </dt>
               <dd>
-                <p>Nad projektem pracowałem 3 lata i przez ten czas urósł on do rozmiarów bardzo dużej aplikacji, zbudowanej z kilkudziesięciu modułów, która przy złej architekturze mogłaby być bardzo trudna w utrzymaniu. To, że udało mi się zaprojektować ją w taki sposób, aby tego uniknąć, jest moim największym osiągnięciem.</p>
+                <p>I worked on the project for 3 years and during that time it grew into a very large application, composed of several dozen modules, which could be very difficult to maintain if the architecture was poor. The fact that I was able to design it to avoid this is my greatest achievement.</p>
               </dd>
               <dt>
-                <strong>technologie</strong>
+                <strong>tech stack</strong>
               </dt>
               <dd>Angular 9+, Sass</dd>
             </dl>
@@ -372,25 +365,25 @@
                 04.2020
               </time>
             </p>
-            <h3>MediaAmbassador, <strong>programista frontend</strong></h3>
+            <h3>MediaAmbassador, <strong>frontend developer</strong></h3>
 
             
 
             <dl>
               <dt>
-                <strong>cele i obowiązki</strong>
+                <strong>goals and responsibilities</strong>
               </dt>
               <dd>
-                <p>Praca, która polegała na realizowaniu wielu projektów z branży e-commerce. Większość z nich była tworzona z użyciem Angulara, jednak te starsze, które należało utrzymywać, bazowały na narzędziach takich jak JQuery czy AngularJS. Pracowaliśmy nad kilkoma projektami na raz, w małych zespołach, w których panowała duża rotacja projektów.</p>
+                <p>A job that involved implementing many e-commerce projects. Most of them were created using Angular, but the older ones that had to be maintained were based on tools such as JQuery or AngularJS. We worked on several projects at once, in small teams with high project turnover.</p>
               </dd>
               <dt>
-                <strong>osiągnięcia</strong>
+                <strong>achievements</strong>
               </dt>
               <dd>
-                <p>Najważniejszym osiągnięciem było wypracowanie wraz zespołem modelu pracy, który umożliwił nam seryjną realizację projektów w krótkim czasie, przy jednoczesnym zachowaniu wysokiej jakości kodu. Byliśmy zdolni do oddawania jednego sklepu internetowego co ok. 1-2 miesiące.</p>
+                <p>The most important achievement was the development of a work model with the team that allowed us to serially implement projects in a short time, while maintaining high code quality. We were able to open one online store approximately every 1-2 months.</p>
               </dd>
               <dt>
-                <strong>technologie</strong>
+                <strong>tech stack</strong>
               </dt>
               <dd>Angular 2+, Sass</dd>
             </dl>
@@ -410,25 +403,25 @@
                 08.2017
               </time>
             </p>
-            <h3>Appevo, <strong>młodszy programista frontend</strong></h3>
+            <h3>Appevo, <strong>junior frontend developer</strong></h3>
 
             
 
             <dl>
               <dt>
-                <strong>cele i obowiązki</strong>
+                <strong>goals and responsibilities</strong>
               </dt>
               <dd>
-                <p>Była to swoista kontynuacja pracy w Lithium. Miałem okazję ugruntować swoją wiedzę i umiejętności, których nauczyłem się w poprzednim miejscu pracy.</p>
+                <p>It was a kind of continuation of the work at Lithium. I had the opportunity to consolidate my knowledge and skills that I learned at my previous job.</p>
               </dd>
               <dt>
-                <strong>osiągnięcia</strong>
+                <strong>achievements</strong>
               </dt>
               <dd>
-                <p>Udało mi się stworzyć swego rodzaju &#39;setup bazowy&#39;, dzięki któremu łatwiej było mi zaczynać każdy kolejny projekt i który bardzo ułatwiał mi początkowe prace.</p>
+                <p>I managed to create a kind of &#39;base setup&#39; that made it easier for me to start each subsequent project and made my initial work much easier.</p>
               </dd>
               <dt>
-                <strong>technologie</strong>
+                <strong>tech stack</strong>
               </dt>
               <dd>HTML, CSS/Sass, JQuery, WordPress</dd>
             </dl>
@@ -448,25 +441,25 @@
                 01.2017
               </time>
             </p>
-            <h3>Lithium, <strong>młodszy programista frontend</strong></h3>
+            <h3>Lithium, <strong>junior frontend developer</strong></h3>
 
             
 
             <dl>
               <dt>
-                <strong>cele i obowiązki</strong>
+                <strong>goals and responsibilities</strong>
               </dt>
               <dd>
-                <p>Moim zadaniem było programowanie prostych stron internetowych (w ścisłej współpracy z designerem) wraz z późniejszym wdrożeniem ich na Wordpressa. Nie licząc wsparcia merytorycznego senior developera, nad częścią developerską pracowałem samodzielnie.</p>
+                <p>My task was to program simple websites (in close cooperation with the designer) and then implement them on Wordpress. Apart from the substantive support of the senior developer, I worked on the development part independently.</p>
               </dd>
               <dt>
-                <strong>osiągnięcia</strong>
+                <strong>achievements</strong>
               </dt>
               <dd>
-                <p>Jako, że nie miałem wielkiego doświadczenia we frontendzie, to samo realizowanie projektów bez opóźnień było dla mnie dużym osiągnięciem.</p>
+                <p>Since I didn&#39;t have much experience in frontend, just completing projects without delays was a big achievement for me.</p>
               </dd>
               <dt>
-                <strong>technologie</strong>
+                <strong>tech stack</strong>
               </dt>
               <dd>HTML, CSS/Sass, JQuery, WordPress</dd>
             </dl>
@@ -476,7 +469,7 @@
       </section>
 
       <section id="education">
-        <h2 class="section-title">wykształcenie</h2>
+        <h2 class="section-title">education</h2>
 
         <ol reversed>
           
@@ -486,10 +479,10 @@
               -
               <time>2022</time>
             </p>
-            <h3>Politechnika Wrocławska</h3>
+            <h3>Wroclaw University of Technology</h3>
             <p>
-               Inżynier -   Elektronika 
-              <br />Specjalizacja: zastosowania inżynierii komputerowej w technice
+               Engineer -   Electronics 
+              <br />Specialization: applications of computer engineering in technology
               
             </p>
           </li>
@@ -500,9 +493,9 @@
               -
               <time>2015</time>
             </p>
-            <h3>Publiczne technikum nr 5 w Opolu</h3>
+            <h3>Public technical school No. 5 in Opole</h3>
             <p>
-               Technik informatyk 
+               IT specialist 
             </p>
           </li>
           
@@ -511,7 +504,7 @@
 
       <section id="portfolio">
         <h2 class="section-title">portfolio</h2>
-        <p>Poniższa galeria przedstawia tylko niektóre projekty realizowane przez firmy, w których miałem przyjemność pracować. Postanowiłem umieścić tylko takie, w których mój udział był duży lub bardzo duży. Niestety większość z nich to projekty sprzed paru lat, ponieważ te najnowsze były do użytku wewnętrznego i nie ma możliwości ich pokazania.</p>
+        <p>The gallery below shows just some of the projects carried out by companies where I had the pleasure of working. I decided to include only those in which my participation was large or very large. Unfortunately, most of them are projects from a few years ago, because the newest ones were for internal use and there is no way to show them.</p>
 
         <ul>
           
@@ -530,7 +523,7 @@
 
               <figcaption>
                 <a href="https://sevikebab.pl/" target="_blank">Sevi Kebab</a>
-                <small>Realizacja w ramach pracy dla Lithium</small>
+                <small>Implementation as part of work for Lithium</small>
               </figcaption>
             </figure>
           </li>
@@ -550,7 +543,7 @@
 
               <figcaption>
                 <a href="https://bytom.com.pl/" target="_blank">Bytom</a>
-                <small>Realizacja w ramach pracy dla MediaAmbassador</small>
+                <small>Implementation as part of work for MediaAmbassador</small>
               </figcaption>
             </figure>
           </li>
@@ -570,7 +563,7 @@
 
               <figcaption>
                 <a href="http://www.grzebieluch.pl/" target="_blank">Grzebieluch stomatologia</a>
-                <small>Realizacja w ramach pracy dla Lithium</small>
+                <small>Implementation as part of work for Lithium</small>
               </figcaption>
             </figure>
           </li>
@@ -590,7 +583,7 @@
 
               <figcaption>
                 <a href="https://www.qubushotel.com/pl/" target="_blank">Qubus Hotel</a>
-                <small>Realizacja w ramach pracy dla MediaAmbassador</small>
+                <small>Implementation as part of work for MediaAmbassador</small>
               </figcaption>
             </figure>
           </li>
@@ -610,7 +603,7 @@
 
               <figcaption>
                 <a href="https://bigstar.pl/" target="_blank">BigStar</a>
-                <small>Realizacja w ramach pracy dla MediaAmbassador</small>
+                <small>Implementation as part of work for MediaAmbassador</small>
               </figcaption>
             </figure>
           </li>
@@ -630,7 +623,7 @@
 
               <figcaption>
                 <a href="https://www.callpage.pl/" target="_blank">Callpage</a>
-                <small>Realizacja w ramach pracy dla 1000i</small>
+                <small>Implementation as part of work for 1000i</small>
               </figcaption>
             </figure>
           </li>
@@ -650,7 +643,7 @@
 
               <figcaption>
                 <a href="http://podblekitnymkoniem.pl/" target="_blank">Willa pod błękitnym koniem</a>
-                <small>Realizacja w ramach pracy dla Lithium</small>
+                <small>Implementation as part of work for Lithium</small>
               </figcaption>
             </figure>
           </li>
@@ -670,7 +663,7 @@
 
               <figcaption>
                 <a href="https://notariuszkawroclaw.pl/" target="_blank">Notariuszka Wrocław</a>
-                <small>Realizacja w ramach pracy dla Lithium</small>
+                <small>Implementation as part of work for Lithium</small>
               </figcaption>
             </figure>
           </li>
@@ -679,14 +672,14 @@
       </section>
 
       <footer>
-        <small>Autor: Szymon Antczak, 2024</small>
+        <small>Author: Szymon Antczak, 2024</small>
       </footer>
     </main>
 
     <aside id="scroll-up" class="hidden" aria-hidden="true">
       <a
         href="#about-me"
-        aria-label="O mnie"
+        aria-label="About me"
         tabindex="-1"
       >
         <svg

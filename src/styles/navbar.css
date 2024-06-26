@@ -30,8 +30,7 @@
       }
     }
 
-    nav ul li a,
-    footer button {
+    nav ul li a {
       display: block;
       padding: 0.5rem 1rem;
 
@@ -55,59 +54,50 @@
     }
 
     footer {
-      .font-size-options {
-        margin-block: 0.5rem;
+      position: relative;
+
+      #language-button {
+        background: none;
+        color: var(--color-text);
+        border: none;
+        text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-inline: auto;
+        gap: 0.25rem;
 
-        span {
-          font-size: 0.9rem;
-
-          @media (max-width: 767px) {
-            font-size: 0.8rem;
-          }
-        }
-
-        button {
-          border: none;
-          background: none;
-          color: var(--color-text);
-          font-size: 1.25rem;
-          padding: 0.25rem;
-
-          @media (max-width: 767px) {
-            font-size: 1rem;
-            padding: 0.2rem;
-          }
-
-          &:hover {
-            color: var(--color-accent);
-          }
+        .chevron {
+          transition: rotate .3s ease;
         }
       }
 
-      ul {
-        display: flex;
-        gap: 0.5rem;
-        justify-content: center;
+      #language-menu {
+        display: none;
+        position: absolute;
+        inset-block-start: -1rem;
+        inset-inline-start: 50%;
+        translate: -50% -100%;
+        padding-inline: 0.5rem;
+        padding-block: 0.25rem;
+        background: black;
+        box-shadow: 0 0 10px black;
+        inline-size: 100%;
 
         @media (max-width: 767px) {
-          gap: 0.25rem;
+          padding-inline: 0.25rem;
+          padding-block: 0.125rem;
         }
 
-        li a {
-          font-size: 0.9rem;
-          padding-block: 0.25rem;
-          padding-inline: 0.1rem;
+        &.show {
+          display: block;
+        }
+
+        li {
+          margin: 0.5rem 0;
 
           @media (max-width: 767px) {
-            font-size: 0.75rem;
-          }
-
-          &.active {
-            text-decoration: underline;
-            text-underline-offset: 0.2rem;
+            font-size: 0.8rem;
           }
         }
       }

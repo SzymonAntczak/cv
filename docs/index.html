@@ -31,8 +31,8 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="./assets/main-CD__t871.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-Du9VAPbM.css">
+    <script type="module" crossorigin src="./assets/main-D0UdSHfe.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-Dqsfw3oM.css">
   </head>
   <body>
     <aside id="navbar">
@@ -51,7 +51,7 @@
             </li>
             
             <li>
-              <a href="#specialization" aria-label="Specjalizacje">
+              <a href="#specializations" aria-label="Specjalizacje">
                 <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e8eaed'><path d='m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z'/></svg>
               </a>
             </li>
@@ -78,30 +78,23 @@
         </nav>
 
         <footer>
-          <div class="font-size-options">
-            <button id="decrease-font-size" aria-label="Zmniejsz czcionkę">
-              -
-            </button>
-            <span aria-hidden="true">Aa</span>
-            <button id="increase-font-size" aria-label="Zwiększ czcionkę">
-              +
-            </button>
-          </div>
+          <button
+            id="language-button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="language-menu"
+            aria-label="Wybierz język"
+          >
+            <span id="selected-language">pl</span>
+            <span class="chevron">▼</span>
+          </button>
 
-          <ul>
-            <li>
-              <a
-                href="/cv/"
-                class="active"
-              >
-                PL
-              </a>
+          <ul id="language-menu" role="menu">
+            <li role="none">
+              <a href="/cv/" role="menuitem">PL</a>
             </li>
-            <li>
-              <a
-                href="/cv/en/"
-                class=""
-              >
+            <li role="none">
+              <a href="/cv/en/" role="menuitem">
                 EN
               </a>
             </li>
@@ -167,9 +160,9 @@
         <p>Cześć! Mam na imię Szymon i od 8 lat zajmuję się frontendem.<br /><br />Większość mojego zawodowego życia spędziłem wykorzystując framework Angular (od wersji 2), jednak uważam, że to nie znajomość konkretnego narzędzia jest najważniejsza, a umiejętność szybkiego przyswajania nowej wiedzy.<br />Dlatego nie chciałym przedstawiać się jako "Angular developer", "React developer" czy też "[tu wstaw dowolną nazwę biblioteki] developer", ale po prostu jako <em>"frontend developer"</em>, który potrafi dostosować się do zmieniających się warunków.<br /><br />W przeszłości miałem okazję pracować zarówno w małych zespołach, jak i w dużych korporacjach, co pozwoliło mi na zdobycie doświadczenia w wielu różnych obszarach. W pracy cenię sobie przed wszystkim możliwość ciągłego rozwoju, dlatego zawsze staram się szukać nowych wyzwań i okazji do nauki.<br /><br />To co chciałbym wnieść do Twojego zespołu, to przede wszystkim sposób myślenia, polegający na rozwiązywaniu problemów w sposób jak <strong>najprostszy</strong> i jak najbardziej <strong>efektywny</strong>. Uważam, że powinno się dobierać odpowiednie narzędzia do konkretnego problemu, a nie na odwrót. Nie lubię komplikować życia ani sobie, ani innym, dlatego zawsze staram się tak dobrać rozwiązania, aby zrealizować postawione przed mną zadanie w najbardziej <strong>optymalny</strong> sposób.<br /><br />Jestem osobą bezkonfliktową, spokojną i zawsze gotową do pomocy. Cenię sobie pracę w zespole, ponieważ uważam, że to właśnie praca w grupie pozwala na osiągnięcie najlepszych rezultatów. Wierzę, że każdy z nas ma coś do zaoferowania, dlatego zawsze staram się słuchać innych i uczyć od nich.<br /><br />Poza pracą interesuję się przede wszystkim sportem (w szczególności tenisem oraz piłką nożną), a w wolnym czasie lubię również poczytać książkę lub popracować na działce.</p>
       </article>
 
-      <section id="specialization">
+      <section id="specializations">
         <header>
-          <h2 class="section-title">Specjalizacje</h2>
+          <h2 class="section-title">specjalizacje</h2>
         </header>
 
         <p>Poniżej znajdziesz listę technologii/zagadnień, w których czuję się najpewniej. Nie wypisywałem tutaj takich rzeczy jak <strong>HTML</strong>, <strong>CSS</strong> czy <strong>JavaScript</strong>, ponieważ według mnie jest to podstawa pracy jako frontend developer.</p>
